@@ -61,7 +61,8 @@ One-time setup on GitHub:
 - **Settings > Pages > Source:** GitHub Actions.
 - **Settings > Rules > Rulesets > New ruleset > Import a ruleset:** pick `.github/rulesets/rc-branches.json`.
   Every `rc-*` branch then accepts changes only through pull requests and cannot be deleted or force-pushed.
-  GitHub Actions is on its bypass list, so the workflow can push the version commit that opens each branch.
+  It has no rule against creating branches, so the workflow can create each next `rc-*` branch with its
+  version commit.
 
 ## Project structure
 

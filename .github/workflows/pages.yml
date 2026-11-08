@@ -85,7 +85,7 @@ jobs:
           --title "v$VERSION" --generate-notes
       - uses: actions/checkout@v4
       # next release branch: patch + 1 from this main commit, with package.json already on that version;
-      # the rc-* ruleset (.github/rulesets) protects it and lets GitHub Actions push this first commit
+      # the rc-* ruleset (.github/rulesets) protects it; it has no creation rule, so this push that creates it passes
       - run: |
           IFS=. read -r major minor patch <<< "$VERSION"
           next="$major.$minor.$((patch + 1))"
