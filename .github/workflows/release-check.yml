@@ -1,0 +1,21 @@
+# A release pull request (rc-x.y.z into main) must carry package.json at x.y.z, so main holds the released version.
+name: Release check
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  version:
+    if: startsWith(github.head_ref, 'rc-')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          branch="${{ github.head_ref }}"
+          pkg=$(node -p "require('./package.json').version")
+          if [[ "rc-$pkg" != "$branch" ]]; then
+            echo "::error::package.json is $pkg but the branch is $branch; run: npm version ${branch#rc-} --no-git-tag-version"
+            exit 1
+          fi
+          echo "package.json $pkg matches $branch"

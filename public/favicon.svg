@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- the rune Raidho (R, as in Ragnarok) on the app's accent colour; drawn here, no game artwork -->
+  <rect width="32" height="32" rx="6" fill="#a33d22"/>
+  <path d="M11 26.5V6L20 11.5L11.6 16.6L21 26.5" fill="none" stroke="#fffefb" stroke-width="3.4"
+    stroke-linecap="square" stroke-linejoin="miter"/>
+</svg>
