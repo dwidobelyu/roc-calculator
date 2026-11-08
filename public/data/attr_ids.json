@@ -1,0 +1,4761 @@
+{
+ "source": "pb_enum.lua AttrType + AttrInfoTable + Localization/English.bytes",
+ "kindRule": "derived=written by AttributeCalculator.CalculateAttribute (attribute_calculator.lua:2445-2881); playerCalc=in/out of that function; percent=ATTR_PERCENT_*/ATTR_MORE_*/*_PER_* (value/10000); flat=ATTR_BASIC_*",
+ "attrs": [
+  {
+   "id": 0,
+   "enum": "ATTR_SPECIAL_SEX",
+   "kind": "other"
+  },
+  {
+   "id": 1,
+   "enum": "ATTR_SPECIAL_BASE_LV",
+   "kind": "other",
+   "playerCalc": "in"
+  },
+  {
+   "id": 2,
+   "enum": "ATTR_BASIC_BASE_EXP",
+   "kind": "flat"
+  },
+  {
+   "id": 3,
+   "enum": "ATTR_SPECIAL_JOB_LV",
+   "kind": "other"
+  },
+  {
+   "id": 4,
+   "enum": "ATTR_BASIC_JOB_EXP",
+   "kind": "flat"
+  },
+  {
+   "id": 5,
+   "enum": "ATTR_BASIC_HP",
+   "kind": "flat"
+  },
+  {
+   "id": 6,
+   "enum": "ATTR_PERCENT_HP",
+   "kind": "percent"
+  },
+  {
+   "id": 7,
+   "enum": "ATTR_BASIC_SP",
+   "kind": "flat"
+  },
+  {
+   "id": 8,
+   "enum": "ATTR_PERCENT_SP",
+   "kind": "percent"
+  },
+  {
+   "id": 9,
+   "enum": "ATTR_BASIC_SIGHT",
+   "kind": "flat"
+  },
+  {
+   "id": 10,
+   "enum": "ATTR_SPECIAL_WEAPON_TYPE",
+   "kind": "other",
+   "playerCalc": "in"
+  },
+  {
+   "id": 11,
+   "enum": "ATTR_SPECIAL_SPECIAL_EXP",
+   "kind": "other"
+  },
+  {
+   "id": 12,
+   "enum": "ATTR_SPECIAL_BARROW_CAR",
+   "kind": "other"
+  },
+  {
+   "id": 13,
+   "enum": "ATTR_BASIC_STR",
+   "kind": "flat",
+   "playerCalc": "in",
+   "display": "STR",
+   "attrInfo": {
+    "name": "STR",
+    "type": 1,
+    "typeId": 1,
+    "equipId": 14,
+    "floorNum": 0,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 14,
+   "enum": "ATTR_BASIC_STR_EQUIP",
+   "kind": "flat",
+   "playerCalc": "in",
+   "display": "STR",
+   "attrInfo": {
+    "name": "STR",
+    "type": 1,
+    "typeId": 1,
+    "equipId": -1,
+    "floorNum": 0,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 15,
+   "enum": "ATTR_BASIC_INT",
+   "kind": "flat",
+   "playerCalc": "in",
+   "display": "INT",
+   "attrInfo": {
+    "name": "INT",
+    "type": 1,
+    "typeId": 1,
+    "equipId": 16,
+    "floorNum": 0,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 16,
+   "enum": "ATTR_BASIC_INT_EQUIP",
+   "kind": "flat",
+   "playerCalc": "in",
+   "display": "INT",
+   "attrInfo": {
+    "name": "INT",
+    "type": 1,
+    "typeId": 1,
+    "equipId": -1,
+    "floorNum": 0,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 17,
+   "enum": "ATTR_BASIC_AGI",
+   "kind": "flat",
+   "playerCalc": "in",
+   "display": "AGI",
+   "attrInfo": {
+    "name": "AGI",
+    "type": 1,
+    "typeId": 1,
+    "equipId": 18,
+    "floorNum": 0,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 18,
+   "enum": "ATTR_BASIC_AGI_EQUIP",
+   "kind": "flat",
+   "playerCalc": "in",
+   "display": "AGI",
+   "attrInfo": {
+    "name": "AGI",
+    "type": 1,
+    "typeId": 1,
+    "equipId": -1,
+    "floorNum": 0,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 19,
+   "enum": "ATTR_BASIC_DEX",
+   "kind": "flat",
+   "playerCalc": "in",
+   "display": "DEX",
+   "attrInfo": {
+    "name": "DEX",
+    "type": 1,
+    "typeId": 1,
+    "equipId": 20,
+    "floorNum": 0,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 20,
+   "enum": "ATTR_BASIC_DEX_EQUIP",
+   "kind": "flat",
+   "playerCalc": "in",
+   "display": "DEX",
+   "attrInfo": {
+    "name": "DEX",
+    "type": 1,
+    "typeId": 1,
+    "equipId": -1,
+    "floorNum": 0,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 21,
+   "enum": "ATTR_BASIC_VIT",
+   "kind": "flat",
+   "playerCalc": "in",
+   "display": "VIT",
+   "attrInfo": {
+    "name": "VIT",
+    "type": 1,
+    "typeId": 1,
+    "equipId": 22,
+    "floorNum": 0,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 22,
+   "enum": "ATTR_BASIC_VIT_EQUIP",
+   "kind": "flat",
+   "playerCalc": "in",
+   "display": "VIT",
+   "attrInfo": {
+    "name": "VIT",
+    "type": 1,
+    "typeId": 1,
+    "equipId": -1,
+    "floorNum": 0,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 23,
+   "enum": "ATTR_BASIC_LUK",
+   "kind": "flat",
+   "playerCalc": "in",
+   "display": "LUK",
+   "attrInfo": {
+    "name": "LUK",
+    "type": 1,
+    "typeId": 1,
+    "equipId": 24,
+    "floorNum": 0,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 24,
+   "enum": "ATTR_BASIC_LUK_EQUIP",
+   "kind": "flat",
+   "playerCalc": "in",
+   "display": "LUK",
+   "attrInfo": {
+    "name": "LUK",
+    "type": 1,
+    "typeId": 1,
+    "equipId": -1,
+    "floorNum": 0,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 25,
+   "enum": "ATTR_BASIC_BASE_ATK",
+   "kind": "flat",
+   "playerCalc": "in"
+  },
+  {
+   "id": 26,
+   "enum": "ATTR_PERCENT_BASE_ATK",
+   "kind": "percent",
+   "playerCalc": "in"
+  },
+  {
+   "id": 27,
+   "enum": "ATTR_BASIC_WEAPON_ATK",
+   "kind": "flat",
+   "playerCalc": "in"
+  },
+  {
+   "id": 28,
+   "enum": "ATTR_PERCENT_WEAPON_ATK",
+   "kind": "percent",
+   "playerCalc": "in"
+  },
+  {
+   "id": 29,
+   "enum": "ATTR_BASIC_SKILL_ATK",
+   "kind": "flat"
+  },
+  {
+   "id": 30,
+   "enum": "ATTR_BASIC_BASE_DEF",
+   "kind": "flat",
+   "playerCalc": "in"
+  },
+  {
+   "id": 31,
+   "enum": "ATTR_PERCENT_BASE_DEF",
+   "kind": "percent",
+   "playerCalc": "in"
+  },
+  {
+   "id": 32,
+   "enum": "ATTR_BASIC_DEF",
+   "kind": "flat",
+   "playerCalc": "in"
+  },
+  {
+   "id": 33,
+   "enum": "ATTR_PERCENT_DEF",
+   "kind": "percent",
+   "playerCalc": "in"
+  },
+  {
+   "id": 34,
+   "enum": "ATTR_BASIC_BASE_MATK",
+   "kind": "flat",
+   "playerCalc": "in"
+  },
+  {
+   "id": 35,
+   "enum": "ATTR_PERCENT_BASE_MATK",
+   "kind": "percent",
+   "playerCalc": "in"
+  },
+  {
+   "id": 36,
+   "enum": "ATTR_BASIC_WEAPON_MATK",
+   "kind": "flat",
+   "playerCalc": "in"
+  },
+  {
+   "id": 37,
+   "enum": "ATTR_PERCENT_WEAPON_MATK",
+   "kind": "percent",
+   "playerCalc": "in"
+  },
+  {
+   "id": 38,
+   "enum": "ATTR_BASIC_SKILL_MATK",
+   "kind": "flat"
+  },
+  {
+   "id": 39,
+   "enum": "ATTR_BASIC_BASE_MDEF",
+   "kind": "flat",
+   "playerCalc": "in"
+  },
+  {
+   "id": 40,
+   "enum": "ATTR_PERCENT_BASE_MDEF",
+   "kind": "percent",
+   "playerCalc": "in"
+  },
+  {
+   "id": 41,
+   "enum": "ATTR_BASIC_MDEF",
+   "kind": "flat",
+   "playerCalc": "in"
+  },
+  {
+   "id": 42,
+   "enum": "ATTR_PERCENT_MDEF",
+   "kind": "percent",
+   "playerCalc": "in"
+  },
+  {
+   "id": 43,
+   "enum": "ATTR_BASIC_IGNORE_DEF",
+   "kind": "flat",
+   "display": "Ignore PDEF",
+   "attrInfo": {
+    "name": "Ignore PDEF",
+    "type": 2,
+    "typeId": 3,
+    "equipId": -1,
+    "floorNum": 0,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 44,
+   "enum": "ATTR_PERCENT_IGNORE_DEF",
+   "kind": "derived",
+   "playerCalc": "in/out",
+   "display": "Ignore PDEF",
+   "attrInfo": {
+    "name": "Ignore PDEF",
+    "type": 2,
+    "typeId": 3,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 45,
+   "enum": "ATTR_BASIC_IGNORE_MDEF",
+   "kind": "flat",
+   "display": "Ignore MDEF",
+   "attrInfo": {
+    "name": "Ignore MDEF",
+    "type": 2,
+    "typeId": 3,
+    "equipId": -1,
+    "floorNum": 0,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 46,
+   "enum": "ATTR_PERCENT_IGNORE_MDEF",
+   "kind": "derived",
+   "playerCalc": "in/out",
+   "display": "Ignore MDEF",
+   "attrInfo": {
+    "name": "Ignore MDEF",
+    "type": 2,
+    "typeId": 3,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 47,
+   "enum": "ATTR_BASIC_MAX_HP",
+   "kind": "flat",
+   "playerCalc": "in"
+  },
+  {
+   "id": 48,
+   "enum": "ATTR_PERCENT_MAX_HP",
+   "kind": "percent",
+   "playerCalc": "in",
+   "display": "Max HP",
+   "attrInfo": {
+    "name": "Max HP",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 49,
+   "enum": "ATTR_BASIC_MAX_SP",
+   "kind": "flat",
+   "playerCalc": "in"
+  },
+  {
+   "id": 50,
+   "enum": "ATTR_PERCENT_MAX_SP",
+   "kind": "percent",
+   "playerCalc": "in",
+   "display": "Max SP",
+   "attrInfo": {
+    "name": "Max SP",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 51,
+   "enum": "ATTR_BASIC_HIT",
+   "kind": "flat",
+   "playerCalc": "in"
+  },
+  {
+   "id": 52,
+   "enum": "ATTR_PERCENT_HIT",
+   "kind": "percent",
+   "playerCalc": "in"
+  },
+  {
+   "id": 53,
+   "enum": "ATTR_BASIC_FLEE",
+   "kind": "flat",
+   "playerCalc": "in"
+  },
+  {
+   "id": 54,
+   "enum": "ATTR_PERCENT_FLEE",
+   "kind": "percent",
+   "playerCalc": "in"
+  },
+  {
+   "id": 55,
+   "enum": "ATTR_BASIC_CRI",
+   "kind": "flat",
+   "playerCalc": "in"
+  },
+  {
+   "id": 56,
+   "enum": "ATTR_PERCENT_CRI",
+   "kind": "percent",
+   "playerCalc": "in"
+  },
+  {
+   "id": 57,
+   "enum": "ATTR_BASIC_CRI_RES",
+   "kind": "flat",
+   "playerCalc": "in"
+  },
+  {
+   "id": 58,
+   "enum": "ATTR_PERCENT_CRI_RES",
+   "kind": "percent",
+   "playerCalc": "in"
+  },
+  {
+   "id": 59,
+   "enum": "ATTR_PERCENT_CRI_DAM",
+   "kind": "percent",
+   "playerCalc": "in",
+   "display": "CRIT DMG",
+   "attrInfo": {
+    "name": "CRIT DMG",
+    "type": 2,
+    "typeId": 3,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 60,
+   "enum": "ATTR_PERCENT_CRI_DEF",
+   "kind": "percent",
+   "display": "CRIT DMG RES",
+   "attrInfo": {
+    "name": "CRIT DMG RES",
+    "type": 2,
+    "typeId": 3,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 61,
+   "enum": "ATTR_BASIC_REFINE",
+   "kind": "flat",
+   "playerCalc": "in"
+  },
+  {
+   "id": 62,
+   "enum": "ATTR_BASIC_MREFINE",
+   "kind": "flat",
+   "playerCalc": "in"
+  },
+  {
+   "id": 63,
+   "enum": "ATTR_BASIC_REFINE_REDUC",
+   "kind": "flat",
+   "playerCalc": "in",
+   "display": "Refine PDEF",
+   "attrInfo": {
+    "name": "Refine PDEF",
+    "type": 2,
+    "typeId": 2,
+    "equipId": -1,
+    "floorNum": 0,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 64,
+   "enum": "ATTR_BASIC_MREFINE_REDUC",
+   "kind": "flat",
+   "display": "Refine MDEF",
+   "attrInfo": {
+    "name": "Refine MDEF",
+    "type": 2,
+    "typeId": 2,
+    "equipId": -1,
+    "floorNum": 0,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 65,
+   "enum": "ATTR_PERCENT_DAM_INCREASE",
+   "kind": "percent",
+   "playerCalc": "in"
+  },
+  {
+   "id": 66,
+   "enum": "ATTR_PERCENT_MDAM_INCREASE",
+   "kind": "percent",
+   "playerCalc": "in"
+  },
+  {
+   "id": 67,
+   "enum": "ATTR_PERCENT_DAM_REDUC",
+   "kind": "percent",
+   "playerCalc": "in"
+  },
+  {
+   "id": 68,
+   "enum": "ATTR_PERCENT_MDAM_REDUC",
+   "kind": "percent",
+   "playerCalc": "in"
+  },
+  {
+   "id": 69,
+   "enum": "ATTR_PERCENT_SKILL_ASPD",
+   "kind": "percent",
+   "playerCalc": "in"
+  },
+  {
+   "id": 70,
+   "enum": "ATTR_BASIC_EQUIP_ASPD",
+   "kind": "flat",
+   "playerCalc": "in"
+  },
+  {
+   "id": 71,
+   "enum": "ATTR_PERCENT_EQUIP_ASPD",
+   "kind": "percent",
+   "playerCalc": "in"
+  },
+  {
+   "id": 72,
+   "enum": "ATTR_BASIC_BASE_ASPD",
+   "kind": "flat",
+   "playerCalc": "in"
+  },
+  {
+   "id": 73,
+   "enum": "ATTR_BASIC_MOVE_SPD",
+   "kind": "flat",
+   "playerCalc": "in"
+  },
+  {
+   "id": 74,
+   "enum": "ATTR_PERCENT_MOVE_SPD",
+   "kind": "percent",
+   "playerCalc": "in"
+  },
+  {
+   "id": 75,
+   "enum": "ATTR_BASIC_HP_RESTORE_SPD",
+   "kind": "flat",
+   "playerCalc": "in"
+  },
+  {
+   "id": 76,
+   "enum": "ATTR_PERCENT_HP_RESTORE_SPD",
+   "kind": "percent",
+   "playerCalc": "in"
+  },
+  {
+   "id": 77,
+   "enum": "ATTR_BASIC_SP_RESTORE_SPD",
+   "kind": "flat",
+   "playerCalc": "in"
+  },
+  {
+   "id": 78,
+   "enum": "ATTR_PERCENT_SP_RESTORE_SPD",
+   "kind": "percent",
+   "playerCalc": "in"
+  },
+  {
+   "id": 79,
+   "enum": "ATTR_PERCENT_ITEM_HP_RESTORE_SPD",
+   "kind": "percent"
+  },
+  {
+   "id": 80,
+   "enum": "ATTR_PERCENT_ITEM_SP_RESTORE_SPD",
+   "kind": "percent"
+  },
+  {
+   "id": 81,
+   "enum": "ATTR_BASIC_CT_FIXED",
+   "kind": "flat",
+   "playerCalc": "in"
+  },
+  {
+   "id": 82,
+   "enum": "ATTR_PERCENT_CT_FIXED",
+   "kind": "percent",
+   "playerCalc": "in"
+  },
+  {
+   "id": 83,
+   "enum": "ATTR_BASIC_CT_CHANGE",
+   "kind": "flat",
+   "playerCalc": "in"
+  },
+  {
+   "id": 84,
+   "enum": "ATTR_PERCENT_CT_CHANGE",
+   "kind": "percent",
+   "playerCalc": "in"
+  },
+  {
+   "id": 85,
+   "enum": "ATTR_BASIC_CD_CHANGE",
+   "kind": "flat"
+  },
+  {
+   "id": 86,
+   "enum": "ATTR_PERCENT_CD_CHANGE",
+   "kind": "percent"
+  },
+  {
+   "id": 87,
+   "enum": "ATTR_BASIC_SP_COST",
+   "kind": "flat"
+  },
+  {
+   "id": 88,
+   "enum": "ATTR_PERCENT_SP_COST",
+   "kind": "percent",
+   "display": "SP Consumption",
+   "attrInfo": {
+    "name": "SP Consumption",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 89,
+   "enum": "ATTR_BASIC_ATK_DISTANCE",
+   "kind": "flat"
+  },
+  {
+   "id": 90,
+   "enum": "ATTR_PERCENT_HEAL_ENC",
+   "kind": "percent",
+   "playerCalc": "in",
+   "display": "Healing Done",
+   "attrInfo": {
+    "name": "Healing Done",
+    "type": 2,
+    "typeId": 3,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 91,
+   "enum": "ATTR_PERCENT_BEHEAL_ENC",
+   "kind": "percent",
+   "display": "Healing Taken",
+   "attrInfo": {
+    "name": "Healing Taken",
+    "type": 2,
+    "typeId": 3,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 92,
+   "enum": "ATTR_SPECIAL_SINGING_BREAK_MAX_HP_PERCENT",
+   "kind": "other"
+  },
+  {
+   "id": 93,
+   "enum": "ATTR_SPECIAL_ASPD",
+   "kind": "derived",
+   "playerCalc": "out",
+   "display": "ASPD",
+   "attrInfo": {
+    "name": "ASPD",
+    "type": 2,
+    "typeId": 3,
+    "equipId": -1,
+    "floorNum": 0,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 94,
+   "enum": "ATTR_SPECIAL_STR",
+   "kind": "derived",
+   "playerCalc": "out"
+  },
+  {
+   "id": 95,
+   "enum": "ATTR_SPECIAL_INT",
+   "kind": "derived",
+   "playerCalc": "out"
+  },
+  {
+   "id": 96,
+   "enum": "ATTR_SPECIAL_AGI",
+   "kind": "derived",
+   "playerCalc": "out"
+  },
+  {
+   "id": 97,
+   "enum": "ATTR_SPECIAL_DEX",
+   "kind": "derived",
+   "playerCalc": "out"
+  },
+  {
+   "id": 98,
+   "enum": "ATTR_SPECIAL_VIT",
+   "kind": "derived",
+   "playerCalc": "out"
+  },
+  {
+   "id": 99,
+   "enum": "ATTR_SPECIAL_LUK",
+   "kind": "derived",
+   "playerCalc": "out"
+  },
+  {
+   "id": 100,
+   "enum": "ATTR_SPECIAL_VEHICLE_SPD",
+   "kind": "other"
+  },
+  {
+   "id": 101,
+   "enum": "ATTR_BASIC_GROUP_CD_CHANGE",
+   "kind": "flat"
+  },
+  {
+   "id": 102,
+   "enum": "ATTR_PERCENT_GROUP_CD_CHANGE",
+   "kind": "percent",
+   "display": "Global CD%",
+   "attrInfo": {
+    "name": "Global CD%",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 103,
+   "enum": "ATTR_BASIC_WIGHT",
+   "kind": "derived",
+   "playerCalc": "out"
+  },
+  {
+   "id": 104,
+   "enum": "ATTR_PERCENT_WIGHT",
+   "kind": "derived",
+   "playerCalc": "out"
+  },
+  {
+   "id": 105,
+   "enum": "ATTR_BASIC_WIGHT_MAX",
+   "kind": "flat",
+   "playerCalc": "in"
+  },
+  {
+   "id": 106,
+   "enum": "ATTR_PERCENT_WIGHT_MAX",
+   "kind": "percent",
+   "playerCalc": "in"
+  },
+  {
+   "id": 107,
+   "enum": "ATTR_SPECIAL_WIGHT_MAX",
+   "kind": "derived",
+   "playerCalc": "out"
+  },
+  {
+   "id": 108,
+   "enum": "ATTR_BASIC_WIGHT_PROFESSION",
+   "kind": "flat"
+  },
+  {
+   "id": 109,
+   "enum": "ATTR_BASIC_WIGHT_COMMODITY",
+   "kind": "flat",
+   "playerCalc": "in"
+  },
+  {
+   "id": 110,
+   "enum": "ATTR_PERCENT_FLOATING_DAMAGE_UP",
+   "kind": "percent"
+  },
+  {
+   "id": 111,
+   "enum": "ATTR_PERCENT_FLOATING_DAMAGE_DOWN",
+   "kind": "percent"
+  },
+  {
+   "id": 112,
+   "enum": "ATTR_BASIC_WEAPON_ATK_DISTANCE",
+   "kind": "flat"
+  },
+  {
+   "id": 113,
+   "enum": "ATTR_BASIC_EXTRA_WIGHT",
+   "kind": "flat",
+   "playerCalc": "in"
+  },
+  {
+   "id": 114,
+   "enum": "ATTR_BASIC_WIGHT_CART",
+   "kind": "flat"
+  },
+  {
+   "id": 115,
+   "enum": "ATTR_SPECIAL_WIGHT_CART_MAX",
+   "kind": "derived",
+   "playerCalc": "out"
+  },
+  {
+   "id": 116,
+   "enum": "ATTR_BASIC_MOVE_SPD_FINAL",
+   "kind": "derived",
+   "playerCalc": "out",
+   "display": "MSPD",
+   "attrInfo": {
+    "name": "MSPD",
+    "type": 2,
+    "typeId": 3,
+    "equipId": -1,
+    "floorNum": 0,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 117,
+   "enum": "ATTR_BASIC_BASE_ATK_FINAL",
+   "kind": "derived",
+   "playerCalc": "out",
+   "display": "PATK",
+   "attrInfo": {
+    "name": "PATK",
+    "type": 2,
+    "typeId": 2,
+    "equipId": 121,
+    "floorNum": 0,
+    "showDetail": 1
+   }
+  },
+  {
+   "id": 118,
+   "enum": "ATTR_BASIC_BASE_MATK_FINAL",
+   "kind": "derived",
+   "playerCalc": "out",
+   "display": "MATK",
+   "attrInfo": {
+    "name": "MATK",
+    "type": 2,
+    "typeId": 2,
+    "equipId": 122,
+    "floorNum": 0,
+    "showDetail": 1
+   }
+  },
+  {
+   "id": 119,
+   "enum": "ATTR_BASIC_BASE_DEF_FINAL",
+   "kind": "derived",
+   "playerCalc": "out",
+   "display": "PDEF",
+   "attrInfo": {
+    "name": "PDEF",
+    "type": 2,
+    "typeId": 2,
+    "equipId": 123,
+    "floorNum": 0,
+    "showDetail": 1
+   }
+  },
+  {
+   "id": 120,
+   "enum": "ATTR_BASIC_BASE_MDEF_FINAL",
+   "kind": "derived",
+   "playerCalc": "out",
+   "display": "MDEF",
+   "attrInfo": {
+    "name": "MDEF",
+    "type": 2,
+    "typeId": 2,
+    "equipId": 124,
+    "floorNum": 0,
+    "showDetail": 1
+   }
+  },
+  {
+   "id": 121,
+   "enum": "ATTR_BASIC_WEAPON_ATK_FINAL",
+   "kind": "derived",
+   "playerCalc": "out",
+   "display": "Equipment PATK",
+   "attrInfo": {
+    "name": "Equipment PATK",
+    "type": 2,
+    "typeId": 2,
+    "equipId": -1,
+    "floorNum": 0,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 122,
+   "enum": "ATTR_BASIC_WEAPON_MATK_FINAL",
+   "kind": "derived",
+   "playerCalc": "out",
+   "display": "Equipment MATK",
+   "attrInfo": {
+    "name": "Equipment MATK",
+    "type": 2,
+    "typeId": 2,
+    "equipId": -1,
+    "floorNum": 0,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 123,
+   "enum": "ATTR_BASIC_DEF_FINAL",
+   "kind": "derived",
+   "playerCalc": "out",
+   "display": "Equipment PDEF",
+   "attrInfo": {
+    "name": "Equipment PDEF",
+    "type": 2,
+    "typeId": 2,
+    "equipId": -1,
+    "floorNum": 0,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 124,
+   "enum": "ATTR_BASIC_MDEF_FINAL",
+   "kind": "derived",
+   "playerCalc": "out",
+   "display": "Equipment MDEF",
+   "attrInfo": {
+    "name": "Equipment MDEF",
+    "type": 2,
+    "typeId": 2,
+    "equipId": -1,
+    "floorNum": 0,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 125,
+   "enum": "ATTR_BASIC_CT_FIXED_FINAL",
+   "kind": "derived",
+   "playerCalc": "out",
+   "display": "Fixed CT",
+   "attrInfo": {
+    "name": "Fixed CT",
+    "type": 2,
+    "typeId": 3,
+    "equipId": -1,
+    "floorNum": 0,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 126,
+   "enum": "ATTR_BASIC_CT_CHANGE_FINAL",
+   "kind": "derived",
+   "playerCalc": "out",
+   "display": "Variable CT",
+   "attrInfo": {
+    "name": "Variable CT",
+    "type": 2,
+    "typeId": 3,
+    "equipId": -1,
+    "floorNum": 0,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 127,
+   "enum": "ATTR_BASIC_MAX_HP_FINAL",
+   "kind": "derived",
+   "playerCalc": "out",
+   "display": "HP",
+   "attrInfo": {
+    "name": "HP",
+    "type": 2,
+    "typeId": 2,
+    "equipId": -1,
+    "floorNum": 0,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 128,
+   "enum": "ATTR_BASIC_MAX_SP_FINAL",
+   "kind": "derived",
+   "playerCalc": "out",
+   "display": "SP",
+   "attrInfo": {
+    "name": "SP",
+    "type": 2,
+    "typeId": 2,
+    "equipId": -1,
+    "floorNum": 0,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 129,
+   "enum": "ATTR_BASIC_HIT_FINAL",
+   "kind": "derived",
+   "playerCalc": "out",
+   "display": "HIT",
+   "attrInfo": {
+    "name": "HIT",
+    "type": 2,
+    "typeId": 2,
+    "equipId": -1,
+    "floorNum": 0,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 130,
+   "enum": "ATTR_BASIC_FLEE_FINAL",
+   "kind": "derived",
+   "playerCalc": "out",
+   "display": "FLEE",
+   "attrInfo": {
+    "name": "FLEE",
+    "type": 2,
+    "typeId": 2,
+    "equipId": -1,
+    "floorNum": 0,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 131,
+   "enum": "ATTR_BASIC_HP_RESTORE_SPD_FINAL",
+   "kind": "derived",
+   "playerCalc": "out",
+   "display": "HP recover",
+   "attrInfo": {
+    "name": "HP recover",
+    "type": 2,
+    "typeId": 2,
+    "equipId": -1,
+    "floorNum": 0,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 132,
+   "enum": "ATTR_BASIC_SP_RESTORE_SPD_FINAL",
+   "kind": "derived",
+   "playerCalc": "out",
+   "display": "SP Recovery",
+   "attrInfo": {
+    "name": "SP Recovery",
+    "type": 2,
+    "typeId": 2,
+    "equipId": -1,
+    "floorNum": 0,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 133,
+   "enum": "ATTR_BASIC_CRI_FINAL",
+   "kind": "derived",
+   "playerCalc": "out",
+   "display": "CRIT",
+   "attrInfo": {
+    "name": "CRIT",
+    "type": 2,
+    "typeId": 3,
+    "equipId": -1,
+    "floorNum": 0,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 134,
+   "enum": "ATTR_BASIC_CRI_RES_FINAL",
+   "kind": "derived",
+   "playerCalc": "out",
+   "display": "CRIT RES",
+   "attrInfo": {
+    "name": "CRIT RES",
+    "type": 2,
+    "typeId": 3,
+    "equipId": -1,
+    "floorNum": 0,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 135,
+   "enum": "ATTR_SPECIAL_CARD_DROP_RATE",
+   "kind": "other"
+  },
+  {
+   "id": 136,
+   "enum": "ATTR_SPECIAL_HEADWEAR_DROP_RATE",
+   "kind": "other"
+  },
+  {
+   "id": 137,
+   "enum": "ATTR_SPECIAL_NO_SKILL",
+   "kind": "other"
+  },
+  {
+   "id": 138,
+   "enum": "ATTR_SPECIAL_NO_ATTACK",
+   "kind": "other"
+  },
+  {
+   "id": 139,
+   "enum": "ATTR_SPECIAL_NO_USE_ITEM",
+   "kind": "other"
+  },
+  {
+   "id": 140,
+   "enum": "ATTR_SPECIAL_NO_MOVE",
+   "kind": "other"
+  },
+  {
+   "id": 141,
+   "enum": "ATTR_SPECIAL_NO_CHARGE_MOVE",
+   "kind": "other"
+  },
+  {
+   "id": 142,
+   "enum": "ATTR_SPECIAL_NO_STIFF",
+   "kind": "other"
+  },
+  {
+   "id": 143,
+   "enum": "ATTR_SPECIAL_FEAR_RUN",
+   "kind": "other"
+  },
+  {
+   "id": 144,
+   "enum": "ATTR_SPECIAL_HIDING",
+   "kind": "other"
+  },
+  {
+   "id": 145,
+   "enum": "ATTR_SPECIAL_FREEZE",
+   "kind": "other"
+  },
+  {
+   "id": 146,
+   "enum": "ATTR_SPECIAL_NO_ATTACKED",
+   "kind": "other"
+  },
+  {
+   "id": 147,
+   "enum": "ATTR_SPECIAL_DEATH_MIMICRY",
+   "kind": "other"
+  },
+  {
+   "id": 148,
+   "enum": "ATTR_SPECIAL_NO_SNEER",
+   "kind": "other"
+  },
+  {
+   "id": 149,
+   "enum": "ATTR_SPECIAL_NO_STOP_SINGING_BY_HURT",
+   "kind": "other"
+  },
+  {
+   "id": 150,
+   "enum": "ATTR_SPECIAL_NO_STOP_SINGING",
+   "kind": "other"
+  },
+  {
+   "id": 151,
+   "enum": "ATTR_SPECIAL_NO_STOP_SKILL",
+   "kind": "other"
+  },
+  {
+   "id": 152,
+   "enum": "ATTR_SPECIAL_NO_STEAL",
+   "kind": "other"
+  },
+  {
+   "id": 153,
+   "enum": "ATTR_SPECIAL_NO_CHANGE_HATRED_TARGET",
+   "kind": "other"
+  },
+  {
+   "id": 154,
+   "enum": "ATTR_SPECIAL_BREAK_HIDING",
+   "kind": "other"
+  },
+  {
+   "id": 155,
+   "enum": "ATTR_SPECIAL_IGNORE_HATRED",
+   "kind": "other"
+  },
+  {
+   "id": 156,
+   "enum": "ATTR_SPECIAL_CUR_COMBAT_POWER",
+   "kind": "derived",
+   "playerCalc": "out"
+  },
+  {
+   "id": 157,
+   "enum": "ATTR_SPECIAL_MAX_COMBAT_POWER",
+   "kind": "derived",
+   "playerCalc": "in/out"
+  },
+  {
+   "id": 158,
+   "enum": "ATTR_SPECIAL_STATE_NO_MOVE",
+   "kind": "other"
+  },
+  {
+   "id": 159,
+   "enum": "ATTR_SPECIAL_ATK_ATTR",
+   "kind": "other"
+  },
+  {
+   "id": 160,
+   "enum": "ATTR_SPECIAL_DEF_ATTR",
+   "kind": "other"
+  },
+  {
+   "id": 161,
+   "enum": "ATTR_SPECIAL_SIZE",
+   "kind": "other"
+  },
+  {
+   "id": 162,
+   "enum": "ATTR_SPECIAL_RACE",
+   "kind": "other"
+  },
+  {
+   "id": 163,
+   "enum": "ATTR_SPECIAL_JOB",
+   "kind": "other",
+   "playerCalc": "in"
+  },
+  {
+   "id": 164,
+   "enum": "ATTR_SPECIAL_IS_MONSTER",
+   "kind": "other"
+  },
+  {
+   "id": 165,
+   "enum": "ATTR_SPECIAL_AFTER_RESET_HP",
+   "kind": "other"
+  },
+  {
+   "id": 166,
+   "enum": "ATTR_SPECIAL_AFTER_RESET_SP",
+   "kind": "other"
+  },
+  {
+   "id": 167,
+   "enum": "ATTR_SPECIAL_ENTITY_TABLE_ID",
+   "kind": "other"
+  },
+  {
+   "id": 168,
+   "enum": "ATTR_SPECIAL_BUFF_WEAPON_ATTACK_ATTR",
+   "kind": "other"
+  },
+  {
+   "id": 169,
+   "enum": "ATTR_SPECIAL_FORBID_NATURAL_RECOVERY",
+   "kind": "other"
+  },
+  {
+   "id": 170,
+   "enum": "ATTR_SPECIAL_DEF_TYPE",
+   "kind": "other"
+  },
+  {
+   "id": 171,
+   "enum": "ATTR_SPECIAL_UNABLE_SELECT",
+   "kind": "other"
+  },
+  {
+   "id": 172,
+   "enum": "ATTR_PERCENT_WIND_SKILL_ATK",
+   "kind": "percent",
+   "display": "Wind Skill DMG",
+   "attrInfo": {
+    "name": "Wind Skill DMG",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 173,
+   "enum": "ATTR_PERCENT_EARTH_SKILL_ATK",
+   "kind": "percent",
+   "display": "Earth Skill DMG",
+   "attrInfo": {
+    "name": "Earth Skill DMG",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 174,
+   "enum": "ATTR_PERCENT_FIRE_SKILL_ATK",
+   "kind": "percent",
+   "display": "Fire Skill DMG",
+   "attrInfo": {
+    "name": "Fire Skill DMG",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 175,
+   "enum": "ATTR_PERCENT_WATER_SKILL_ATK",
+   "kind": "percent",
+   "display": "Water Skill DMG",
+   "attrInfo": {
+    "name": "Water Skill DMG",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 176,
+   "enum": "ATTR_PERCENT_FORMLESS_SKILL_ATK",
+   "kind": "percent",
+   "display": "Neutral Skill DMG",
+   "attrInfo": {
+    "name": "Neutral Skill DMG",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 177,
+   "enum": "ATTR_PERCENT_HOLY_SKILL_ATK",
+   "kind": "percent",
+   "display": "Holy Skill DMG",
+   "attrInfo": {
+    "name": "Holy Skill DMG",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 178,
+   "enum": "ATTR_PERCENT_DARK_SKILL_ATK",
+   "kind": "percent",
+   "display": "Shadow Skill DMG",
+   "attrInfo": {
+    "name": "Shadow Skill DMG",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 179,
+   "enum": "ATTR_PERCENT_GHOSS_SKILL_ATK",
+   "kind": "percent",
+   "display": "Ghost Skill DMG",
+   "attrInfo": {
+    "name": "Ghost Skill DMG",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 180,
+   "enum": "ATTR_PERCENT_UNDEAD_SKILL_ATK",
+   "kind": "percent",
+   "display": "Undead Skill DMG",
+   "attrInfo": {
+    "name": "Undead Skill DMG",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 181,
+   "enum": "ATTR_PERCENT_POISON_SKILL_ATK",
+   "kind": "percent",
+   "display": "Poison Skill DMG",
+   "attrInfo": {
+    "name": "Poison Skill DMG",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 182,
+   "enum": "ATTR_PERCENT_WIND_SKILL_DEF",
+   "kind": "percent",
+   "display": "Wind Skill DMG Reduction %",
+   "attrInfo": {
+    "name": "Wind Skill DMG Reduction %",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 183,
+   "enum": "ATTR_PERCENT_EARTH_SKILL_DEF",
+   "kind": "percent",
+   "display": "Earth Skill DMG Reduction %",
+   "attrInfo": {
+    "name": "Earth Skill DMG Reduction %",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 184,
+   "enum": "ATTR_PERCENT_FIRE_SKILL_DEF",
+   "kind": "percent",
+   "display": "Fire Skill DMG Reduction %",
+   "attrInfo": {
+    "name": "Fire Skill DMG Reduction %",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 185,
+   "enum": "ATTR_PERCENT_WATER_SKILL_DEF",
+   "kind": "percent",
+   "display": "Water Skill DMG Reduction %",
+   "attrInfo": {
+    "name": "Water Skill DMG Reduction %",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 186,
+   "enum": "ATTR_PERCENT_FORMLESS_SKILL_DEF",
+   "kind": "percent",
+   "display": "Neutral Skill DMG Reduction %",
+   "attrInfo": {
+    "name": "Neutral Skill DMG Reduction %",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 187,
+   "enum": "ATTR_PERCENT_HOLY_SKILL_DEF",
+   "kind": "percent",
+   "display": "Holy Skill DMG Reduction %",
+   "attrInfo": {
+    "name": "Holy Skill DMG Reduction %",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 188,
+   "enum": "ATTR_PERCENT_DARK_SKILL_DEF",
+   "kind": "percent",
+   "display": "DMG Reduction vs Shadow %",
+   "attrInfo": {
+    "name": "DMG Reduction vs Shadow %",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 189,
+   "enum": "ATTR_PERCENT_GHOSS_SKILL_DEF",
+   "kind": "percent",
+   "display": "Ghost Skill DMG Reduction %",
+   "attrInfo": {
+    "name": "Ghost Skill DMG Reduction %",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 190,
+   "enum": "ATTR_PERCENT_UNDEAD_SKILL_DEF",
+   "kind": "percent",
+   "display": "Undead Skill DMG Reduction %",
+   "attrInfo": {
+    "name": "Undead Skill DMG Reduction %",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 191,
+   "enum": "ATTR_PERCENT_POISON_SKILL_DEF",
+   "kind": "percent",
+   "display": "Poison Skill DMG Reduction %",
+   "attrInfo": {
+    "name": "Poison Skill DMG Reduction %",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 192,
+   "enum": "ATTR_PERCENT_WIND_NPC_DAM",
+   "kind": "percent",
+   "display": "DMG vs Wind Enemies",
+   "attrInfo": {
+    "name": "DMG vs Wind Enemies",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 193,
+   "enum": "ATTR_PERCENT_EARTH_NPC_DAM",
+   "kind": "percent",
+   "display": "DMG vs Earth Enemies",
+   "attrInfo": {
+    "name": "DMG vs Earth Enemies",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 194,
+   "enum": "ATTR_PERCENT_FIRE_NPC_DAM",
+   "kind": "percent",
+   "display": "DMG vs Fire Enemies",
+   "attrInfo": {
+    "name": "DMG vs Fire Enemies",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 195,
+   "enum": "ATTR_PERCENT_WATER_NPC_DAM",
+   "kind": "percent",
+   "display": "DMG vs Water Enemies",
+   "attrInfo": {
+    "name": "DMG vs Water Enemies",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 196,
+   "enum": "ATTR_PERCENT_FORMLESS_NPC_DAM",
+   "kind": "percent",
+   "display": "DMG vs Neutral Enemies",
+   "attrInfo": {
+    "name": "DMG vs Neutral Enemies",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 197,
+   "enum": "ATTR_PERCENT_HOLY_NPC_DAM",
+   "kind": "percent",
+   "display": "DMG vs Holy Enemies",
+   "attrInfo": {
+    "name": "DMG vs Holy Enemies",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 198,
+   "enum": "ATTR_PERCENT_DARK_NPC_DAM",
+   "kind": "percent",
+   "display": "DMG vs Shadow Enemies",
+   "attrInfo": {
+    "name": "DMG vs Shadow Enemies",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 199,
+   "enum": "ATTR_PERCENT_GHOSS_NPC_DAM",
+   "kind": "percent",
+   "display": "DMG vs Ghost Enemies",
+   "attrInfo": {
+    "name": "DMG vs Ghost Enemies",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 200,
+   "enum": "ATTR_PERCENT_UNDEAD_NPC_DAM",
+   "kind": "percent",
+   "display": "DMG vs Undead Enemies",
+   "attrInfo": {
+    "name": "DMG vs Undead Enemies",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 201,
+   "enum": "ATTR_PERCENT_POISON_NPC_DAM",
+   "kind": "percent",
+   "display": "DMG vs Poison Enemies",
+   "attrInfo": {
+    "name": "DMG vs Poison Enemies",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 202,
+   "enum": "ATTR_PERCENT_BRUTE_DAM",
+   "kind": "percent",
+   "display": "DMG vs Brute",
+   "attrInfo": {
+    "name": "DMG vs Brute",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 203,
+   "enum": "ATTR_PERCENT_DEMI_HUMAN_DAM",
+   "kind": "percent",
+   "display": "DMG vs Demi-Human",
+   "attrInfo": {
+    "name": "DMG vs Demi-Human",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 204,
+   "enum": "ATTR_PERCENT_DEMON_DAM",
+   "kind": "percent",
+   "display": "DMG vs Demon",
+   "attrInfo": {
+    "name": "DMG vs Demon",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 205,
+   "enum": "ATTR_PERCENT_PLANT_DAM",
+   "kind": "percent",
+   "display": "DMG vs Plant",
+   "attrInfo": {
+    "name": "DMG vs Plant",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 206,
+   "enum": "ATTR_PERCENT_UNDEAD_DAM",
+   "kind": "percent",
+   "display": "DMG vs Undead",
+   "attrInfo": {
+    "name": "DMG vs Undead",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 207,
+   "enum": "ATTR_PERCENT_FORMLESS_DAM",
+   "kind": "percent",
+   "display": "DMG vs Formless",
+   "attrInfo": {
+    "name": "DMG vs Formless",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 208,
+   "enum": "ATTR_PERCENT_FISH_DAM",
+   "kind": "percent",
+   "display": "DMG vs Fish",
+   "attrInfo": {
+    "name": "DMG vs Fish",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 209,
+   "enum": "ATTR_PERCENT_ANGEL_DAM",
+   "kind": "percent",
+   "display": "DMG vs Angel",
+   "attrInfo": {
+    "name": "DMG vs Angel",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 210,
+   "enum": "ATTR_PERCENT_INSECT_DAM",
+   "kind": "percent",
+   "display": "DMG vs Insect",
+   "attrInfo": {
+    "name": "DMG vs Insect",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 211,
+   "enum": "ATTR_PERCENT_DRAGON_DAM",
+   "kind": "percent",
+   "display": "DMG vs Dragon",
+   "attrInfo": {
+    "name": "DMG vs Dragon",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 212,
+   "enum": "ATTR_PERCENT_BRUTE_RES",
+   "kind": "percent",
+   "display": "DMG Reduction vs Brute",
+   "attrInfo": {
+    "name": "DMG Reduction vs Brute",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 213,
+   "enum": "ATTR_PERCENT_DEMI_HUMAN_RES",
+   "kind": "percent",
+   "display": "DMG Reduction vs Demi-Human",
+   "attrInfo": {
+    "name": "DMG Reduction vs Demi-Human",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 214,
+   "enum": "ATTR_PERCENT_DEMON_RES",
+   "kind": "percent",
+   "display": "DMG Reduction vs Demon",
+   "attrInfo": {
+    "name": "DMG Reduction vs Demon",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 215,
+   "enum": "ATTR_PERCENT_PLANT_RES",
+   "kind": "percent",
+   "display": "DMG Reduction vs Plant",
+   "attrInfo": {
+    "name": "DMG Reduction vs Plant",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 216,
+   "enum": "ATTR_PERCENT_UNDEAD_RES",
+   "kind": "percent",
+   "display": "DMG Reduction vs Undead",
+   "attrInfo": {
+    "name": "DMG Reduction vs Undead",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 217,
+   "enum": "ATTR_PERCENT_FORMLESS_RES",
+   "kind": "percent",
+   "display": "DMG Reduction vs Formless",
+   "attrInfo": {
+    "name": "DMG Reduction vs Formless",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 218,
+   "enum": "ATTR_PERCENT_FISH_RES",
+   "kind": "percent",
+   "display": "DMG Reduction vs Fish",
+   "attrInfo": {
+    "name": "DMG Reduction vs Fish",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 219,
+   "enum": "ATTR_PERCENT_ANGEL_RES",
+   "kind": "percent",
+   "display": "DMG Reduction vs Angel",
+   "attrInfo": {
+    "name": "DMG Reduction vs Angel",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 220,
+   "enum": "ATTR_PERCENT_INSECT_RES",
+   "kind": "percent",
+   "display": "DMG Reduction vs Insect",
+   "attrInfo": {
+    "name": "DMG Reduction vs Insect",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 221,
+   "enum": "ATTR_PERCENT_DRAGON_RES",
+   "kind": "percent",
+   "display": "DMG Reduction vs Dragon",
+   "attrInfo": {
+    "name": "DMG Reduction vs Dragon",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 222,
+   "enum": "ATTR_PERCENT_SMALL_DAM",
+   "kind": "percent",
+   "display": "DMG vs Small Enemies",
+   "attrInfo": {
+    "name": "DMG vs Small Enemies",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 223,
+   "enum": "ATTR_PERCENT_MID_DAM",
+   "kind": "percent",
+   "display": "DMG vs Medium Enemies",
+   "attrInfo": {
+    "name": "DMG vs Medium Enemies",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 224,
+   "enum": "ATTR_PERCENT_BIG_DAM",
+   "kind": "percent",
+   "display": "DMG vs Large Enemies",
+   "attrInfo": {
+    "name": "DMG vs Large Enemies",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 225,
+   "enum": "ATTR_PERCENT_BOSS_DAM",
+   "kind": "percent",
+   "display": "DMG vs BOSS ",
+   "attrInfo": {
+    "name": "DMG vs BOSS ",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 226,
+   "enum": "ATTR_PERCENT_MONSTER_DAM",
+   "kind": "percent",
+   "display": "DMG vs Non-Boss Enemy",
+   "attrInfo": {
+    "name": "DMG vs Non-Boss Enemy",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 227,
+   "enum": "ATTR_PERCENT_PLAYER_DAM",
+   "kind": "percent",
+   "display": "DMG vs Player",
+   "attrInfo": {
+    "name": "DMG vs Player",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 228,
+   "enum": "ATTR_PERCENT_TRAP_DAM",
+   "kind": "percent"
+  },
+  {
+   "id": 229,
+   "enum": "ATTR_PERCENT_SMALL_RES",
+   "kind": "percent",
+   "display": "DMG Reduction vs Small Enemies",
+   "attrInfo": {
+    "name": "DMG Reduction vs Small Enemies",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 230,
+   "enum": "ATTR_PERCENT_MID_RES",
+   "kind": "percent",
+   "display": "DMG Reduction vs Medium Enemies",
+   "attrInfo": {
+    "name": "DMG Reduction vs Medium Enemies",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 231,
+   "enum": "ATTR_PERCENT_BIG_RES",
+   "kind": "percent",
+   "display": "DMG Reduction vs Large Monsters",
+   "attrInfo": {
+    "name": "DMG Reduction vs Large Monsters",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 232,
+   "enum": "ATTR_PERCENT_BOSS_RES",
+   "kind": "percent",
+   "playerCalc": "in"
+  },
+  {
+   "id": 233,
+   "enum": "ATTR_PERCENT_MONSTER_RES",
+   "kind": "percent",
+   "playerCalc": "in"
+  },
+  {
+   "id": 234,
+   "enum": "ATTR_PERCENT_PLAYER_RES",
+   "kind": "percent",
+   "display": "DMG Reduction vs Player",
+   "attrInfo": {
+    "name": "DMG Reduction vs Player",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 235,
+   "enum": "ATTR_PERCENT_TRAP_RES",
+   "kind": "percent"
+  },
+  {
+   "id": 236,
+   "enum": "ATTR_PERCENT_HATRED",
+   "kind": "percent"
+  },
+  {
+   "id": 237,
+   "enum": "ATTR_EQUIP_MAIN_WEAPON",
+   "kind": "other",
+   "playerCalc": "in"
+  },
+  {
+   "id": 238,
+   "enum": "ATTR_EQUIP_SECONDRY_WEAPON",
+   "kind": "other",
+   "playerCalc": "in"
+  },
+  {
+   "id": 239,
+   "enum": "ATTR_EQUIP_HEAD_GEAR",
+   "kind": "other"
+  },
+  {
+   "id": 240,
+   "enum": "ATTR_EQUIP_FACE_GEAR",
+   "kind": "other"
+  },
+  {
+   "id": 241,
+   "enum": "ATTR_EQUIP_MOUTH_GEAR",
+   "kind": "other"
+  },
+  {
+   "id": 242,
+   "enum": "ATTR_EQUIP_CLOAK",
+   "kind": "other"
+  },
+  {
+   "id": 243,
+   "enum": "ATTR_EQUIP_ARMOR",
+   "kind": "other"
+  },
+  {
+   "id": 244,
+   "enum": "ATTR_EQUIP_BOOTS",
+   "kind": "other"
+  },
+  {
+   "id": 245,
+   "enum": "ATTR_EQUIP_ORNAMENT1",
+   "kind": "other"
+  },
+  {
+   "id": 246,
+   "enum": "ATTR_EQUIP_ORNAMENT2",
+   "kind": "other"
+  },
+  {
+   "id": 247,
+   "enum": "ATTR_EQUIP_BACK_GEAR",
+   "kind": "other"
+  },
+  {
+   "id": 248,
+   "enum": "ATTR_EQUIP_HORSE",
+   "kind": "other"
+  },
+  {
+   "id": 249,
+   "enum": "ATTR_SPECIAL_REMOTE_PHYSICAL_DAMAGE_RATE",
+   "kind": "other"
+  },
+  {
+   "id": 250,
+   "enum": "ATTR_SPECIAL_ITEM_RECOVER_RATE",
+   "kind": "other"
+  },
+  {
+   "id": 251,
+   "enum": "ATTR_SPECIAL_PHYSICAL_DAMAGE_REBOUND_RATE",
+   "kind": "other"
+  },
+  {
+   "id": 252,
+   "enum": "ATTR_SPECIAL_MAGIC_DAMAGE_REBOUND_RATE",
+   "kind": "other"
+  },
+  {
+   "id": 253,
+   "enum": "ATTR_BASIC_SINGLE_SINGING_TIME_CHANGE",
+   "kind": "flat"
+  },
+  {
+   "id": 254,
+   "enum": "ATTR_PERCENT_SINGLE_SINGING_TIME_CHANGE",
+   "kind": "percent"
+  },
+  {
+   "id": 255,
+   "enum": "ATTR_SPECIAL_DAMAGE_RATE",
+   "kind": "other"
+  },
+  {
+   "id": 256,
+   "enum": "ATTR_SPECIAL_REMOTE_PHYSICAL_DAMAGE_RELIEF",
+   "kind": "other"
+  },
+  {
+   "id": 257,
+   "enum": "ATTR_SPECIAL_POISON_ANTIBODY_RATE",
+   "kind": "other"
+  },
+  {
+   "id": 258,
+   "enum": "ATTR_SPECIAL_BLOOD_ANTIBODY_RATE",
+   "kind": "other"
+  },
+  {
+   "id": 259,
+   "enum": "ATTR_SPECIAL_BURN_ANTIBODY_RATE",
+   "kind": "other"
+  },
+  {
+   "id": 260,
+   "enum": "ATTR_SPECIAL_CURSE_ANTIBODY_RATE",
+   "kind": "other"
+  },
+  {
+   "id": 261,
+   "enum": "ATTR_SPECIAL_DARK_ANTIBODY_RATE",
+   "kind": "other"
+  },
+  {
+   "id": 262,
+   "enum": "ATTR_SPECIAL_SILENT_ANTIBODY_RATE",
+   "kind": "other"
+  },
+  {
+   "id": 263,
+   "enum": "ATTR_SPECIAL_FEAR_ANTIBODY_RATE",
+   "kind": "other"
+  },
+  {
+   "id": 264,
+   "enum": "ATTR_SPECIAL_STUN_ANTIBODY_RATE",
+   "kind": "other"
+  },
+  {
+   "id": 265,
+   "enum": "ATTR_SPECIAL_SLEEP_ANTIBODY_RATE",
+   "kind": "other"
+  },
+  {
+   "id": 266,
+   "enum": "ATTR_SPECIAL_FROZEN_ANTIBODY_RATE",
+   "kind": "other"
+  },
+  {
+   "id": 267,
+   "enum": "ATTR_SPECIAL_FOSSILIZE_ANTIBODY_RATE",
+   "kind": "other"
+  },
+  {
+   "id": 268,
+   "enum": "ATTR_SPECIAL_PARALYTIC_ANTIBODY_RATE",
+   "kind": "other"
+  },
+  {
+   "id": 269,
+   "enum": "ATTR_SPECIAL_DIZZY_ANTIBODY_RATE",
+   "kind": "other"
+  },
+  {
+   "id": 270,
+   "enum": "ATTR_SPECIAL_POISON_SUCC_RATE",
+   "kind": "other"
+  },
+  {
+   "id": 271,
+   "enum": "ATTR_SPECIAL_BLOOD_SUCC_RATE",
+   "kind": "other"
+  },
+  {
+   "id": 272,
+   "enum": "ATTR_SPECIAL_BURN_SUCC_RATE",
+   "kind": "other"
+  },
+  {
+   "id": 273,
+   "enum": "ATTR_SPECIAL_CURSE_SUCC_RATE",
+   "kind": "other"
+  },
+  {
+   "id": 274,
+   "enum": "ATTR_SPECIAL_DARK_SUCC_RATE",
+   "kind": "other"
+  },
+  {
+   "id": 275,
+   "enum": "ATTR_SPECIAL_SILENT_SUCC_RATE",
+   "kind": "other"
+  },
+  {
+   "id": 276,
+   "enum": "ATTR_SPECIAL_FEAR_SUCC_RATE",
+   "kind": "other"
+  },
+  {
+   "id": 277,
+   "enum": "ATTR_SPECIAL_STUN_SUCC_RATE",
+   "kind": "other"
+  },
+  {
+   "id": 278,
+   "enum": "ATTR_SPECIAL_SLEEP_SUCC_RATE",
+   "kind": "other"
+  },
+  {
+   "id": 279,
+   "enum": "ATTR_SPECIAL_FROZEN_SUCC_RATE",
+   "kind": "other"
+  },
+  {
+   "id": 280,
+   "enum": "ATTR_SPECIAL_FOSSILIZE_SUCC_RATE",
+   "kind": "other"
+  },
+  {
+   "id": 281,
+   "enum": "ATTR_SPECIAL_PARALYTIC_SUCC_RATE",
+   "kind": "other"
+  },
+  {
+   "id": 282,
+   "enum": "ATTR_SPECIAL_DIZZY_SUCC_RATE",
+   "kind": "other"
+  },
+  {
+   "id": 283,
+   "enum": "ATTR_PERCENT_SKILL_ATK",
+   "kind": "percent"
+  },
+  {
+   "id": 284,
+   "enum": "ATTR_BASIC_BRUTE_DAM",
+   "kind": "flat"
+  },
+  {
+   "id": 285,
+   "enum": "ATTR_BASIC_DEMI_HUMAN_DAM",
+   "kind": "flat"
+  },
+  {
+   "id": 286,
+   "enum": "ATTR_BASIC_DEMON_DAM",
+   "kind": "flat"
+  },
+  {
+   "id": 287,
+   "enum": "ATTR_BASIC_PLANT_DAM",
+   "kind": "flat"
+  },
+  {
+   "id": 288,
+   "enum": "ATTR_BASIC_UNDEAD_DAM",
+   "kind": "flat"
+  },
+  {
+   "id": 289,
+   "enum": "ATTR_BASIC_FORMLESS_DAM",
+   "kind": "flat"
+  },
+  {
+   "id": 290,
+   "enum": "ATTR_BASIC_FISH_DAM",
+   "kind": "flat"
+  },
+  {
+   "id": 291,
+   "enum": "ATTR_BASIC_ANGEL_DAM",
+   "kind": "flat"
+  },
+  {
+   "id": 292,
+   "enum": "ATTR_BASIC_INSECT_DAM",
+   "kind": "flat"
+  },
+  {
+   "id": 293,
+   "enum": "ATTR_BASIC_DRAGON_DAM",
+   "kind": "flat"
+  },
+  {
+   "id": 294,
+   "enum": "ATTR_PERCENT_STR_EQUIP",
+   "kind": "percent",
+   "playerCalc": "in"
+  },
+  {
+   "id": 295,
+   "enum": "ATTR_PERCENT_INT_EQUIP",
+   "kind": "percent",
+   "playerCalc": "in"
+  },
+  {
+   "id": 296,
+   "enum": "ATTR_PERCENT_AGI_EQUIP",
+   "kind": "percent",
+   "playerCalc": "in"
+  },
+  {
+   "id": 297,
+   "enum": "ATTR_PERCENT_DEX_EQUIP",
+   "kind": "percent",
+   "playerCalc": "in"
+  },
+  {
+   "id": 298,
+   "enum": "ATTR_PERCENT_VIT_EQUIP",
+   "kind": "percent",
+   "playerCalc": "in"
+  },
+  {
+   "id": 299,
+   "enum": "ATTR_PERCENT_LUK_EQUIP",
+   "kind": "percent",
+   "playerCalc": "in"
+  },
+  {
+   "id": 300,
+   "enum": "ATTR_SPECIAL_NO_ACTIVE_SKILL",
+   "kind": "other"
+  },
+  {
+   "id": 301,
+   "enum": "ATTR_PERCENT_CT_FIXED_FINAL",
+   "kind": "derived",
+   "playerCalc": "out",
+   "display": "Fixed CT",
+   "attrInfo": {
+    "name": "Fixed CT",
+    "type": 2,
+    "typeId": 3,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 302,
+   "enum": "ATTR_PERCENT_CT_CHANGE_FINAL",
+   "kind": "derived",
+   "playerCalc": "out",
+   "display": "Variable CT",
+   "attrInfo": {
+    "name": "Variable CT",
+    "type": 2,
+    "typeId": 3,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 303,
+   "enum": "ATTR_SPECIAL_SINGING_INTERRUPT",
+   "kind": "other"
+  },
+  {
+   "id": 304,
+   "enum": "ATTR_SPECIAL_BATTLE_VEHICLE_SPD",
+   "kind": "other"
+  },
+  {
+   "id": 305,
+   "enum": "ATTR_SPECIAL_WITH_ARROW_ELEMENT",
+   "kind": "other"
+  },
+  {
+   "id": 306,
+   "enum": "ATTR_SPECIAL_WITHOUT_ARROW_ELEMENT",
+   "kind": "other"
+  },
+  {
+   "id": 307,
+   "enum": "ATTR_SPECIAL_CHAT_ROOM",
+   "kind": "other"
+  },
+  {
+   "id": 308,
+   "enum": "ATTR_SPECIAL_WIGHT_CART_FINAL",
+   "kind": "other",
+   "playerCalc": "in"
+  },
+  {
+   "id": 309,
+   "enum": "ATTR_SPECIAL_IMMUNE_OTHERS_BUFF",
+   "kind": "other"
+  },
+  {
+   "id": 310,
+   "enum": "ATTR_SPECIAL_PHYSICAL_DAMAGE_RATE",
+   "kind": "other"
+  },
+  {
+   "id": 311,
+   "enum": "ATTR_SPECIAL_PHYSICAL_DAMAGE_RELIEF",
+   "kind": "other"
+  },
+  {
+   "id": 312,
+   "enum": "ATTR_BASIC_WEAPONEX_ATK",
+   "kind": "flat",
+   "playerCalc": "in"
+  },
+  {
+   "id": 313,
+   "enum": "ATTR_BASIC_WEAPONEX_MATK",
+   "kind": "flat",
+   "playerCalc": "in"
+  },
+  {
+   "id": 314,
+   "enum": "ATTR_SPECIAL_DANCE",
+   "kind": "other"
+  },
+  {
+   "id": 315,
+   "enum": "ATTR_SPECIAL_DANCE_SPEED",
+   "kind": "other"
+  },
+  {
+   "id": 316,
+   "enum": "ATTR_BASIC_SHIELD_DEF",
+   "kind": "flat",
+   "playerCalc": "in"
+  },
+  {
+   "id": 317,
+   "enum": "ATTR_BASIC_SHIELD_DEF_IGNORE",
+   "kind": "flat"
+  },
+  {
+   "id": 318,
+   "enum": "ATTR_BASIC_MEDEL_ATK",
+   "kind": "flat",
+   "playerCalc": "in"
+  },
+  {
+   "id": 319,
+   "enum": "ATTR_PERCENT_MEDEL_ATK",
+   "kind": "percent",
+   "playerCalc": "in"
+  },
+  {
+   "id": 320,
+   "enum": "ATTR_BASIC_MEDEL_MATK",
+   "kind": "flat",
+   "playerCalc": "in"
+  },
+  {
+   "id": 321,
+   "enum": "ATTR_PERCENT_MEDEL_MATK",
+   "kind": "percent",
+   "playerCalc": "in"
+  },
+  {
+   "id": 322,
+   "enum": "ATTR_BASIC_MEDEL_HP",
+   "kind": "flat",
+   "playerCalc": "in"
+  },
+  {
+   "id": 323,
+   "enum": "ATTR_PERCENT_MEDEL_HP",
+   "kind": "percent",
+   "playerCalc": "in"
+  },
+  {
+   "id": 324,
+   "enum": "ATTR_BASIC_MEDEL_SP",
+   "kind": "flat",
+   "playerCalc": "in"
+  },
+  {
+   "id": 325,
+   "enum": "ATTR_PERCENT_MEDEL_SP",
+   "kind": "percent",
+   "playerCalc": "in"
+  },
+  {
+   "id": 326,
+   "enum": "ATTR_SPECIAL_EAGLE",
+   "kind": "other"
+  },
+  {
+   "id": 327,
+   "enum": "ATTR_NEED_CALC_COMBAT_POWER",
+   "kind": "other",
+   "playerCalc": "in"
+  },
+  {
+   "id": 328,
+   "enum": "ATTR_PERCENT_WEAPONEX_ATK",
+   "kind": "percent",
+   "playerCalc": "in"
+  },
+  {
+   "id": 329,
+   "enum": "ATTR_PERCENT_WEAPONEX_MATK",
+   "kind": "percent",
+   "playerCalc": "in"
+  },
+  {
+   "id": 330,
+   "enum": "ATTR_SPECIAL_NO_SCENE_INTERACTION",
+   "kind": "other"
+  },
+  {
+   "id": 331,
+   "enum": "ATTR_SPECIAL_HPBAN",
+   "kind": "other"
+  },
+  {
+   "id": 332,
+   "enum": "ATTR_SPECIAL_SPBAN",
+   "kind": "other"
+  },
+  {
+   "id": 333,
+   "enum": "ATTR_SPECIAL_NO_EQUIP_MODIFY",
+   "kind": "other"
+  },
+  {
+   "id": 334,
+   "enum": "ATTR_SPECIAL_INDESTRUCT_MWEAPON",
+   "kind": "other"
+  },
+  {
+   "id": 335,
+   "enum": "ATTR_SPECIAL_INDESTRUCT_SWEAPON",
+   "kind": "other"
+  },
+  {
+   "id": 336,
+   "enum": "ATTR_SPECIAL_INDESTRUCT_BODY",
+   "kind": "other"
+  },
+  {
+   "id": 337,
+   "enum": "ATTR_SPECIAL_INDESTRUCT_BACK",
+   "kind": "other"
+  },
+  {
+   "id": 338,
+   "enum": "ATTR_SPECIAL_INDESTRUCT_SHOE",
+   "kind": "other"
+  },
+  {
+   "id": 339,
+   "enum": "ATTR_TOTAL_REFINE",
+   "kind": "derived",
+   "playerCalc": "out",
+   "display": "Refine PATK",
+   "attrInfo": {
+    "name": "Refine PATK",
+    "type": 2,
+    "typeId": 2,
+    "equipId": -1,
+    "floorNum": 0,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 340,
+   "enum": "ATTR_TOTAL_MREFINE",
+   "kind": "derived",
+   "playerCalc": "out",
+   "display": "Refine MATK",
+   "attrInfo": {
+    "name": "Refine MATK",
+    "type": 2,
+    "typeId": 2,
+    "equipId": -1,
+    "floorNum": 0,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 341,
+   "enum": "ATTR_SPECIAL_CAN_NOT_CHANGE_FIGHT_STATE",
+   "kind": "other"
+  },
+  {
+   "id": 342,
+   "enum": "ATTR_BASIC_MERCENARY_ATK",
+   "kind": "flat",
+   "playerCalc": "in"
+  },
+  {
+   "id": 343,
+   "enum": "ATTR_BASIC_MERCENARY_MATK",
+   "kind": "flat",
+   "playerCalc": "in"
+  },
+  {
+   "id": 344,
+   "enum": "ATTR_BASIC_MERCENARY_HP",
+   "kind": "flat",
+   "playerCalc": "in"
+  },
+  {
+   "id": 345,
+   "enum": "ATTR_SPECIAL_HATRED_NUM",
+   "kind": "other"
+  },
+  {
+   "id": 346,
+   "enum": "ATTR_BASIC_ADDITIONAL_ATK_DAM",
+   "kind": "flat",
+   "display": "PDMG Bonus",
+   "attrInfo": {
+    "name": "PDMG Bonus",
+    "type": 2,
+    "typeId": 3,
+    "equipId": -1,
+    "floorNum": 0,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 347,
+   "enum": "ATTR_BASIC_ADDITIONAL_MATK_DAM",
+   "kind": "flat",
+   "display": "MDMG Bonus",
+   "attrInfo": {
+    "name": "MDMG Bonus",
+    "type": 2,
+    "typeId": 3,
+    "equipId": -1,
+    "floorNum": 0,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 348,
+   "enum": "ATTR_BASIC_RESOURCE",
+   "kind": "flat"
+  },
+  {
+   "id": 349,
+   "enum": "ATTR_PERCENT_RESOURCE",
+   "kind": "percent"
+  },
+  {
+   "id": 350,
+   "enum": "ATTR_BASIC_MAX_RESOURCE",
+   "kind": "flat",
+   "playerCalc": "in"
+  },
+  {
+   "id": 351,
+   "enum": "ATTR_PERCENT_MAX_RESOURCE",
+   "kind": "percent",
+   "playerCalc": "in"
+  },
+  {
+   "id": 352,
+   "enum": "ATTR_BASIC_MAX_RESOURCE_FINAL",
+   "kind": "derived",
+   "playerCalc": "out"
+  },
+  {
+   "id": 353,
+   "enum": "ATTR_SPECIAL_NO_HEAL",
+   "kind": "other"
+  },
+  {
+   "id": 354,
+   "enum": "ATTR_PERCENT_PLAYER_BOSS_RES",
+   "kind": "percent",
+   "playerCalc": "in"
+  },
+  {
+   "id": 355,
+   "enum": "ATTR_PERCENT_PLAYER_MONSTER_RES",
+   "kind": "percent",
+   "playerCalc": "in"
+  },
+  {
+   "id": 356,
+   "enum": "ATTR_PERCENT_VEHICLE_SPD",
+   "kind": "percent"
+  },
+  {
+   "id": 357,
+   "enum": "ATTR_SPECIAL_VEHICLE_SPD_ADDITION",
+   "kind": "other"
+  },
+  {
+   "id": 358,
+   "enum": "ATTR_SPECIAL_POISON_RECO_SPEED",
+   "kind": "other"
+  },
+  {
+   "id": 359,
+   "enum": "ATTR_SPECIAL_BLEED_RECO_SPEED",
+   "kind": "other"
+  },
+  {
+   "id": 360,
+   "enum": "ATTR_SPECIAL_BURN_RECO_SPEED",
+   "kind": "other"
+  },
+  {
+   "id": 361,
+   "enum": "ATTR_SPECIAL_CURSE_RECO_SPEED",
+   "kind": "other"
+  },
+  {
+   "id": 362,
+   "enum": "ATTR_SPECIAL_DARK_RECO_SPEED",
+   "kind": "other"
+  },
+  {
+   "id": 363,
+   "enum": "ATTR_SPECIAL_SILENT_RECO_SPEED",
+   "kind": "other"
+  },
+  {
+   "id": 364,
+   "enum": "ATTR_SPECIAL_SLOW_RECO_SPEED",
+   "kind": "other"
+  },
+  {
+   "id": 365,
+   "enum": "ATTR_SPECIAL_FEAR_RECO_SPEED",
+   "kind": "other"
+  },
+  {
+   "id": 366,
+   "enum": "ATTR_SPECIAL_IMMOBILIZE_RECO_SPEED",
+   "kind": "other"
+  },
+  {
+   "id": 367,
+   "enum": "ATTR_SPECIAL_SLEEP_RECO_SPEED",
+   "kind": "other"
+  },
+  {
+   "id": 368,
+   "enum": "ATTR_SPECIAL_FROZEN_RECO_SPEED",
+   "kind": "other"
+  },
+  {
+   "id": 369,
+   "enum": "ATTR_SPECIAL_FOSSILIZE_RECO_SPEED",
+   "kind": "other"
+  },
+  {
+   "id": 370,
+   "enum": "ATTR_SPECIAL_PARALYTIC_RECO_SPEED",
+   "kind": "other"
+  },
+  {
+   "id": 371,
+   "enum": "ATTR_SPECIAL_STUN_RECO_SPEED",
+   "kind": "other"
+  },
+  {
+   "id": 372,
+   "enum": "ATTR_SPECIAL_ALL_RECO_SPEED",
+   "kind": "other"
+  },
+  {
+   "id": 373,
+   "enum": "ATTR_PET_STR",
+   "kind": "other"
+  },
+  {
+   "id": 374,
+   "enum": "ATTR_PET_AGI",
+   "kind": "other"
+  },
+  {
+   "id": 375,
+   "enum": "ATTR_PET_VIT",
+   "kind": "other"
+  },
+  {
+   "id": 376,
+   "enum": "ATTR_PET_INT",
+   "kind": "other"
+  },
+  {
+   "id": 377,
+   "enum": "ATTR_PET_DEX",
+   "kind": "other"
+  },
+  {
+   "id": 378,
+   "enum": "ATTR_PET_LUK",
+   "kind": "other"
+  },
+  {
+   "id": 379,
+   "enum": "ATTR_PET_LEVELUP_HP",
+   "kind": "other"
+  },
+  {
+   "id": 380,
+   "enum": "ATTR_PET_LEVELUP_ATK",
+   "kind": "other"
+  },
+  {
+   "id": 381,
+   "enum": "ATTR_PET_LEVELUP_MATK",
+   "kind": "other"
+  },
+  {
+   "id": 382,
+   "enum": "ATTR_PET_LEVELUP_HIT",
+   "kind": "other"
+  },
+  {
+   "id": 383,
+   "enum": "ATTR_PET_LEVELUP_FLEE",
+   "kind": "other"
+  },
+  {
+   "id": 384,
+   "enum": "ATTR_PET_LEVELUP_SP",
+   "kind": "other"
+  },
+  {
+   "id": 385,
+   "enum": "ATTR_PET_LEVELUP_DEF",
+   "kind": "other"
+  },
+  {
+   "id": 386,
+   "enum": "ATTR_PET_LEVELUP_MDEF",
+   "kind": "other"
+  },
+  {
+   "id": 387,
+   "enum": "ATTR_PET_LEVELUP_ASPD",
+   "kind": "other"
+  },
+  {
+   "id": 388,
+   "enum": "ATTR_PET_LEVELUP_CRI",
+   "kind": "other"
+  },
+  {
+   "id": 389,
+   "enum": "ATTR_PET_LEVELUP_CRI_RES",
+   "kind": "other"
+  },
+  {
+   "id": 390,
+   "enum": "ATTR_PET_LOVE",
+   "kind": "other"
+  },
+  {
+   "id": 391,
+   "enum": "ATTR_PET_HUNGER",
+   "kind": "other"
+  },
+  {
+   "id": 392,
+   "enum": "ATTR_PET_TEMP_HP",
+   "kind": "other"
+  },
+  {
+   "id": 393,
+   "enum": "ATTR_PET_TEMP_ATK",
+   "kind": "other"
+  },
+  {
+   "id": 394,
+   "enum": "ATTR_PET_TEMP_MATK",
+   "kind": "other"
+  },
+  {
+   "id": 395,
+   "enum": "ATTR_PET_TEMP_SP",
+   "kind": "other"
+  },
+  {
+   "id": 396,
+   "enum": "ATTR_PET_TEMP_DEF",
+   "kind": "other"
+  },
+  {
+   "id": 397,
+   "enum": "ATTR_PET_TEMP_MDEF",
+   "kind": "other"
+  },
+  {
+   "id": 398,
+   "enum": "ATTR_PET_TEMP_ASPD",
+   "kind": "other"
+  },
+  {
+   "id": 399,
+   "enum": "ATTR_PET_TEMP_CRI",
+   "kind": "other"
+  },
+  {
+   "id": 400,
+   "enum": "ATTR_PET_TEMP_CRI_RES",
+   "kind": "other"
+  },
+  {
+   "id": 401,
+   "enum": "ATTR_PET_TEMP_PER_HP",
+   "kind": "percent"
+  },
+  {
+   "id": 402,
+   "enum": "ATTR_PET_TEMP_PER_ATK",
+   "kind": "percent"
+  },
+  {
+   "id": 403,
+   "enum": "ATTR_PET_TEMP_PER_MATK",
+   "kind": "percent"
+  },
+  {
+   "id": 404,
+   "enum": "ATTR_PET_TEMP_PER_SP",
+   "kind": "percent"
+  },
+  {
+   "id": 405,
+   "enum": "ATTR_PET_TEMP_PER_DEF",
+   "kind": "percent"
+  },
+  {
+   "id": 406,
+   "enum": "ATTR_PET_TEMP_PER_MDEF",
+   "kind": "percent"
+  },
+  {
+   "id": 407,
+   "enum": "ATTR_PET_TEMP_PER_ASPD",
+   "kind": "percent"
+  },
+  {
+   "id": 408,
+   "enum": "ATTR_PET_TEMP_PER_CRI",
+   "kind": "percent"
+  },
+  {
+   "id": 409,
+   "enum": "ATTR_PET_TEMP_PER_CRI_RES",
+   "kind": "percent"
+  },
+  {
+   "id": 410,
+   "enum": "ATTR_PET_TEMP_PER_SPD",
+   "kind": "percent"
+  },
+  {
+   "id": 411,
+   "enum": "ATTR_PET_TRUE_MAX_HP",
+   "kind": "other"
+  },
+  {
+   "id": 412,
+   "enum": "ATTR_PET_TRUE_ATK",
+   "kind": "other"
+  },
+  {
+   "id": 413,
+   "enum": "ATTR_PET_TRUE_MATK",
+   "kind": "other"
+  },
+  {
+   "id": 414,
+   "enum": "ATTR_PET_TRUE_MAX_SP",
+   "kind": "other"
+  },
+  {
+   "id": 415,
+   "enum": "ATTR_PET_TRUE_DEF",
+   "kind": "other"
+  },
+  {
+   "id": 416,
+   "enum": "ATTR_PET_TRUE_MDEF",
+   "kind": "other"
+  },
+  {
+   "id": 417,
+   "enum": "ATTR_PET_TRUE_ASPD",
+   "kind": "other"
+  },
+  {
+   "id": 418,
+   "enum": "ATTR_PET_TRUE_CRI",
+   "kind": "other"
+  },
+  {
+   "id": 419,
+   "enum": "ATTR_PET_TRUE_CRI_RES",
+   "kind": "other"
+  },
+  {
+   "id": 420,
+   "enum": "ATTR_PET_TRUE_SPD",
+   "kind": "other"
+  },
+  {
+   "id": 421,
+   "enum": "ATTR_BASIC_WEAPON_BOTH",
+   "kind": "flat",
+   "playerCalc": "in"
+  },
+  {
+   "id": 422,
+   "enum": "ATTR_PERCENT_WEAPON_BOTH",
+   "kind": "percent",
+   "playerCalc": "in"
+  },
+  {
+   "id": 423,
+   "enum": "ATTR_BASIC_DEF_BOTH",
+   "kind": "flat",
+   "playerCalc": "in"
+  },
+  {
+   "id": 424,
+   "enum": "ATTR_PERCENT_DEF_BOTH",
+   "kind": "percent",
+   "playerCalc": "in"
+  },
+  {
+   "id": 425,
+   "enum": "ATTR_PERCENT_BOTH_INCREASE",
+   "kind": "percent",
+   "playerCalc": "in"
+  },
+  {
+   "id": 426,
+   "enum": "ATTR_PERCENT_BOTH_REDUC",
+   "kind": "percent",
+   "playerCalc": "in"
+  },
+  {
+   "id": 427,
+   "enum": "ATTR_PERCENT_DAM_INCREASE_FINAL",
+   "kind": "derived",
+   "playerCalc": "out",
+   "display": "PDMG",
+   "attrInfo": {
+    "name": "PDMG",
+    "type": 2,
+    "typeId": 3,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 428,
+   "enum": "ATTR_PERCENT_DAM_REDUC_FINAL",
+   "kind": "derived",
+   "playerCalc": "out",
+   "display": "PDMG.R",
+   "attrInfo": {
+    "name": "PDMG.R",
+    "type": 2,
+    "typeId": 3,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 429,
+   "enum": "ATTR_PERCENT_MDAM_INCREASE_FINAL",
+   "kind": "derived",
+   "playerCalc": "out",
+   "display": "MDMG",
+   "attrInfo": {
+    "name": "MDMG",
+    "type": 2,
+    "typeId": 3,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 430,
+   "enum": "ATTR_PERCENT_MDAM_REDUC_FINAL",
+   "kind": "derived",
+   "playerCalc": "out",
+   "display": "MDMG.R",
+   "attrInfo": {
+    "name": "MDMG.R",
+    "type": 2,
+    "typeId": 3,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 431,
+   "enum": "ATTR_SPECIAL_NOT_JUMPWORD",
+   "kind": "other"
+  },
+  {
+   "id": 432,
+   "enum": "ATTR_PET_STATSTARNUM",
+   "kind": "other"
+  },
+  {
+   "id": 433,
+   "enum": "ATTR_PET_CD_ACCELER",
+   "kind": "other"
+  },
+  {
+   "id": 434,
+   "enum": "ATTR_SPECIAL_PREVENT_JUMP_WORD",
+   "kind": "other"
+  },
+  {
+   "id": 435,
+   "enum": "ATTR_MORE_HP",
+   "kind": "percent"
+  },
+  {
+   "id": 436,
+   "enum": "ATTR_MORE_SP",
+   "kind": "percent"
+  },
+  {
+   "id": 437,
+   "enum": "ATTR_MORE_ATK_BOTH",
+   "kind": "percent"
+  },
+  {
+   "id": 438,
+   "enum": "ATTR_MORE_DEF_BOTH",
+   "kind": "percent"
+  },
+  {
+   "id": 439,
+   "enum": "ATTR_SPECIAL_IS_PET",
+   "kind": "other"
+  },
+  {
+   "id": 440,
+   "enum": "ATTR_SPECIAL_CAN_SINGING_MOVE",
+   "kind": "other"
+  },
+  {
+   "id": 441,
+   "enum": "ATTR_PERCENT_WEAPON_ATK_FINAL",
+   "kind": "derived",
+   "playerCalc": "out",
+   "display": "Equipment PATK",
+   "attrInfo": {
+    "name": "Equipment PATK",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 442,
+   "enum": "ATTR_PERCENT_WEAPON_MATK_FINAL",
+   "kind": "derived",
+   "playerCalc": "out",
+   "display": "Equipment MATK",
+   "attrInfo": {
+    "name": "Equipment MATK",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 443,
+   "enum": "ATTR_PERCENT_DEF_FINAL",
+   "kind": "derived",
+   "playerCalc": "out",
+   "display": "Equipment PDEF",
+   "attrInfo": {
+    "name": "Equipment PDEF",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 444,
+   "enum": "ATTR_PERCENT_MDEF_FINAL",
+   "kind": "derived",
+   "playerCalc": "out",
+   "display": "Equipment MDEF",
+   "attrInfo": {
+    "name": "Equipment MDEF",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 445,
+   "enum": "ATTR_ROGUE_MELEE_AND_RANGED",
+   "kind": "other"
+  },
+  {
+   "id": 446,
+   "enum": "ATTR_EQUIP_COMPLETE_HIT",
+   "kind": "other",
+   "display": "Absolute HIT",
+   "attrInfo": {
+    "name": "Absolute HIT",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 0,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 447,
+   "enum": "ATTR_EQUIP_COMPLETE_DODGE",
+   "kind": "other",
+   "display": "Absolute FLEE",
+   "attrInfo": {
+    "name": "Absolute FLEE",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 0,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 448,
+   "enum": "ATTR_EQUIP_DAMAGE_DEEPEN",
+   "kind": "other",
+   "playerCalc": "in",
+   "display": "Physical Penetration",
+   "attrInfo": {
+    "name": "Physical Penetration",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 0,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 449,
+   "enum": "ATTR_EQUIP_DAMAGE_RELIEF",
+   "kind": "other",
+   "playerCalc": "in",
+   "display": "Physical Resilience",
+   "attrInfo": {
+    "name": "Physical Resilience",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 0,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 450,
+   "enum": "ATTR_EQUIP_COMPLETE_MHIT",
+   "kind": "other",
+   "display": "Magic Precision",
+   "attrInfo": {
+    "name": "Magic Precision",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 0,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 451,
+   "enum": "ATTR_EQUIP_COMPLETE_MDODGE",
+   "kind": "other",
+   "display": "Magic Interference",
+   "attrInfo": {
+    "name": "Magic Interference",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 0,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 452,
+   "enum": "ATTR_EQUIP_DAMAGE_MDEEPEN",
+   "kind": "other",
+   "playerCalc": "in",
+   "display": "Magic Penetration",
+   "attrInfo": {
+    "name": "Magic Penetration",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 0,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 453,
+   "enum": "ATTR_EQUIP_DAMAGE_MRELIEF",
+   "kind": "other",
+   "playerCalc": "in",
+   "display": "Magic Resilience",
+   "attrInfo": {
+    "name": "Magic Resilience",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 0,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 454,
+   "enum": "ATTR_EQUIP_DAMAGE_DEEPEN_FINAL",
+   "kind": "derived",
+   "playerCalc": "out"
+  },
+  {
+   "id": 455,
+   "enum": "ATTR_EQUIP_DAMAGE_RELIEF_FINAL",
+   "kind": "derived",
+   "playerCalc": "out"
+  },
+  {
+   "id": 456,
+   "enum": "ATTR_EQUIP_DAMAGE_MDEEPEN_FINAL",
+   "kind": "derived",
+   "playerCalc": "out"
+  },
+  {
+   "id": 457,
+   "enum": "ATTR_EQUIP_DAMAGE_MRELIEF_FINAL",
+   "kind": "derived",
+   "playerCalc": "out"
+  },
+  {
+   "id": 458,
+   "enum": "ATTR_BASIC_PVE_RES",
+   "kind": "flat",
+   "display": "PvE DMG Reduction",
+   "attrInfo": {
+    "name": "PvE DMG Reduction",
+    "type": 2,
+    "typeId": 3,
+    "equipId": -1,
+    "floorNum": 0,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 459,
+   "enum": "ATTR_BASIC_PVE_DAM",
+   "kind": "flat",
+   "display": "PvE DMG Bonus",
+   "attrInfo": {
+    "name": "PvE DMG Bonus",
+    "type": 2,
+    "typeId": 3,
+    "equipId": -1,
+    "floorNum": 0,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 460,
+   "enum": "ATTR_BASIC_PVP_RES",
+   "kind": "flat",
+   "display": "PvP DMG Reduction",
+   "attrInfo": {
+    "name": "PvP DMG Reduction",
+    "type": 2,
+    "typeId": 3,
+    "equipId": -1,
+    "floorNum": 0,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 461,
+   "enum": "ATTR_BASIC_PVP_DAM",
+   "kind": "flat",
+   "display": "PvP DMG Bonus",
+   "attrInfo": {
+    "name": "PvP DMG Bonus",
+    "type": 2,
+    "typeId": 3,
+    "equipId": -1,
+    "floorNum": 0,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 462,
+   "enum": "ATTR_BASIC_IS_BATTLEROBOT",
+   "kind": "flat"
+  },
+  {
+   "id": 463,
+   "enum": "ATTR_PERCENT_BOSS_RES_FINAL",
+   "kind": "derived",
+   "playerCalc": "out",
+   "display": "DMG Reduction vs BOSS",
+   "attrInfo": {
+    "name": "DMG Reduction vs BOSS",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 464,
+   "enum": "ATTR_PERCENT_MONSTER_RES_FINAL",
+   "kind": "derived",
+   "playerCalc": "out",
+   "display": "DMG Reduction vs Non-Boss Enemy",
+   "attrInfo": {
+    "name": "DMG Reduction vs Non-Boss Enemy",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 465,
+   "enum": "ATTR_SPECIAL_SHIELD_PHYSICAL",
+   "kind": "other"
+  },
+  {
+   "id": 466,
+   "enum": "ATTR_SPECIAL_SHIELD_MAGICAL",
+   "kind": "other"
+  },
+  {
+   "id": 467,
+   "enum": "ATTR_SPECIAL_SHIELD_MIXED",
+   "kind": "other"
+  },
+  {
+   "id": 468,
+   "enum": "ATTR_3T_PROFESSION_DEF1",
+   "kind": "other"
+  },
+  {
+   "id": 469,
+   "enum": "ATTR_3T_PROFESSION_DEF2",
+   "kind": "other"
+  },
+  {
+   "id": 470,
+   "enum": "ATTR_3T_PROFESSION_DEF3",
+   "kind": "other"
+  },
+  {
+   "id": 471,
+   "enum": "ATTR_3T_PROFESSION_DEF4",
+   "kind": "other"
+  },
+  {
+   "id": 472,
+   "enum": "ATTR_3T_PROFESSION_DEF5",
+   "kind": "other"
+  },
+  {
+   "id": 473,
+   "enum": "ATTR_3T_PROFESSION_DEF6",
+   "kind": "other"
+  },
+  {
+   "id": 474,
+   "enum": "ATTR_3T_PROFESSION_DEF7",
+   "kind": "other"
+  },
+  {
+   "id": 475,
+   "enum": "ATTR_3T_PROFESSION_DEF8",
+   "kind": "other"
+  },
+  {
+   "id": 476,
+   "enum": "ATTR_3T_PROFESSION_DEF9",
+   "kind": "other"
+  },
+  {
+   "id": 477,
+   "enum": "ATTR_3T_PROFESSION_DEF10",
+   "kind": "other"
+  },
+  {
+   "id": 478,
+   "enum": "ATTR_BASIC_NEW_SHIELD",
+   "kind": "flat"
+  },
+  {
+   "id": 479,
+   "enum": "ATTR_PERCENT_NEW_SHIELD",
+   "kind": "percent"
+  },
+  {
+   "id": 480,
+   "enum": "ATTR_BASIC_MAX_NEW_SHIELD",
+   "kind": "flat",
+   "playerCalc": "in"
+  },
+  {
+   "id": 481,
+   "enum": "ATTR_PERCENT_MAX_NEW_SHIELD",
+   "kind": "percent",
+   "playerCalc": "in"
+  },
+  {
+   "id": 482,
+   "enum": "ATTR_BASIC_NEW_SHIELD_RESTORE_SPD",
+   "kind": "flat",
+   "playerCalc": "in"
+  },
+  {
+   "id": 483,
+   "enum": "ATTR_PERCENT_NEW_SHIELD_RESTORE_SPD",
+   "kind": "percent",
+   "playerCalc": "in"
+  },
+  {
+   "id": 484,
+   "enum": "ATTR_BASIC_MAX_NEW_SHIELD_FINAL",
+   "kind": "derived",
+   "playerCalc": "out"
+  },
+  {
+   "id": 485,
+   "enum": "ATTR_BASIC_MAX_NEW_SHIELD_RESTORE_SPD_FINAL",
+   "kind": "derived",
+   "playerCalc": "out"
+  },
+  {
+   "id": 486,
+   "enum": "ATTR_SPECIAL_ARMOR",
+   "kind": "derived",
+   "playerCalc": "out"
+  },
+  {
+   "id": 487,
+   "enum": "ATTR_SPECIAL_ARMOR_HEAVY_RESIST",
+   "kind": "other",
+   "display": "DMG Reduction vs Plate Armor Jobs",
+   "attrInfo": {
+    "name": "DMG Reduction vs Plate Armor Jobs",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 488,
+   "enum": "ATTR_SPECIAL_ARMOR_LEATHER_RESIST",
+   "kind": "other",
+   "display": "DMG Reduction vs Leather Armor Jobs",
+   "attrInfo": {
+    "name": "DMG Reduction vs Leather Armor Jobs",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 489,
+   "enum": "ATTR_SPECIAL_ARMOR_CLOTH_RESIST",
+   "kind": "other",
+   "display": "DMG Reduction vs Cloth Armor Jobs",
+   "attrInfo": {
+    "name": "DMG Reduction vs Cloth Armor Jobs",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 490,
+   "enum": "ATTR_SPECIAL_ARMOR_LIGHT_RESIST",
+   "kind": "other",
+   "display": "DMG Reduction vs Mail Armor Jobs",
+   "attrInfo": {
+    "name": "DMG Reduction vs Mail Armor Jobs",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 491,
+   "enum": "ATTR_SPECIAL_ARMOR_HEAVY_RESTRAIN",
+   "kind": "other",
+   "display": "DMG vs Plate Armor Jobs",
+   "attrInfo": {
+    "name": "DMG vs Plate Armor Jobs",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 492,
+   "enum": "ATTR_SPECIAL_ARMOR_LEATHER_RESTRAIN",
+   "kind": "other",
+   "display": "DMG vs Leather Armor Jobs",
+   "attrInfo": {
+    "name": "DMG vs Leather Armor Jobs",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 493,
+   "enum": "ATTR_SPECIAL_ARMOR_CLOTH_RESTRAIN",
+   "kind": "other",
+   "display": "DMG vs Cloth Armor Jobs",
+   "attrInfo": {
+    "name": "DMG vs Cloth Armor Jobs",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 494,
+   "enum": "ATTR_SPECIAL_ARMOR_LIGHT_RESTRAIN",
+   "kind": "other",
+   "display": "DMG vs Mail Armor Jobs",
+   "attrInfo": {
+    "name": "DMG vs Mail Armor Jobs",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 495,
+   "enum": "ATTR_SPECIAL_JOB_LORD_KNIGHT_RESIST",
+   "kind": "other",
+   "display": "DMG Reduction vs Knights",
+   "attrInfo": {
+    "name": "DMG Reduction vs Knights",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 496,
+   "enum": "ATTR_SPECIAL_JOB_PALADIN_RESIST",
+   "kind": "other",
+   "display": "DMG Reduction vs Crusaders",
+   "attrInfo": {
+    "name": "DMG Reduction vs Crusaders",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 497,
+   "enum": "ATTR_SPECIAL_JOB_HIGH_PRIEST_RESIST",
+   "kind": "other",
+   "display": "DMG Reduction vs Priests",
+   "attrInfo": {
+    "name": "DMG Reduction vs Priests",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 498,
+   "enum": "ATTR_SPECIAL_JOB_CHAMPION_RESIST",
+   "kind": "other",
+   "display": "DMG Reduction vs Monks",
+   "attrInfo": {
+    "name": "DMG Reduction vs Monks",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 499,
+   "enum": "ATTR_SPECIAL_JOB_HIGH_WIZARD_RESIST",
+   "kind": "other",
+   "display": "DMG Reduction vs Wizards",
+   "attrInfo": {
+    "name": "DMG Reduction vs Wizards",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 500,
+   "enum": "ATTR_SPECIAL_JOB_SCHOLAR_RESIST",
+   "kind": "other",
+   "display": "DMG Reduction vs Sages",
+   "attrInfo": {
+    "name": "DMG Reduction vs Sages",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 501,
+   "enum": "ATTR_SPECIAL_JOB_ASSASSIEN_CROSS_RESIST",
+   "kind": "other",
+   "display": "DMG Reduction vs Assassins",
+   "attrInfo": {
+    "name": "DMG Reduction vs Assassins",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 502,
+   "enum": "ATTR_SPECIAL_JOB_STALKER_RESIST",
+   "kind": "other",
+   "display": "DMG Reduction vs Rogues",
+   "attrInfo": {
+    "name": "DMG Reduction vs Rogues",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 503,
+   "enum": "ATTR_SPECIAL_JOB_SNIPER_RESIST",
+   "kind": "other",
+   "display": "DMG Reduction vs Hunters",
+   "attrInfo": {
+    "name": "DMG Reduction vs Hunters",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 504,
+   "enum": "ATTR_SPECIAL_JOB_MINSTREL_GYPSY_RESIST",
+   "kind": "other",
+   "display": "DMG Reduction vs Bards / Dancers",
+   "attrInfo": {
+    "name": "DMG Reduction vs Bards / Dancers",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 505,
+   "enum": "ATTR_SPECIAL_JOB_MASTERSMITH_RESIST",
+   "kind": "other",
+   "display": "DMG Reduction vs Blacksmiths",
+   "attrInfo": {
+    "name": "DMG Reduction vs Blacksmiths",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 506,
+   "enum": "ATTR_SPECIAL_JOB_BIOCHEMIST_RESIST",
+   "kind": "other",
+   "display": "DMG Reduction vs Alchemists",
+   "attrInfo": {
+    "name": "DMG Reduction vs Alchemists",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 507,
+   "enum": "ATTR_SPECIAL_JOB_LORD_KNIGHT_RESTRAIN",
+   "kind": "other",
+   "display": "DMG vs Knights",
+   "attrInfo": {
+    "name": "DMG vs Knights",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 508,
+   "enum": "ATTR_SPECIAL_JOB_PALADIN_RESTRAIN",
+   "kind": "other",
+   "display": "DMG vs Crusaders",
+   "attrInfo": {
+    "name": "DMG vs Crusaders",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 509,
+   "enum": "ATTR_SPECIAL_JOB_HIGH_PRIEST_RESTRAIN",
+   "kind": "other",
+   "display": "DMG vs Priests",
+   "attrInfo": {
+    "name": "DMG vs Priests",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 510,
+   "enum": "ATTR_SPECIAL_JOB_CHAMPION_RESTRAIN",
+   "kind": "other",
+   "display": "DMG vs Monks",
+   "attrInfo": {
+    "name": "DMG vs Monks",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 511,
+   "enum": "ATTR_SPECIAL_JOB_HIGH_WIZARD_RESTRAIN",
+   "kind": "other",
+   "display": "DMG vs Wizards",
+   "attrInfo": {
+    "name": "DMG vs Wizards",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 512,
+   "enum": "ATTR_SPECIAL_JOB_SCHOLAR_RESTRAIN",
+   "kind": "other",
+   "display": "DMG vs Sages",
+   "attrInfo": {
+    "name": "DMG vs Sages",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 513,
+   "enum": "ATTR_SPECIAL_JOB_ASSASSIEN_CROSS_RESTRAIN",
+   "kind": "other",
+   "display": "DMG vs Assassins",
+   "attrInfo": {
+    "name": "DMG vs Assassins",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 514,
+   "enum": "ATTR_SPECIAL_JOB_STALKER_RESTRAIN",
+   "kind": "other",
+   "display": "DMG vs Rogues",
+   "attrInfo": {
+    "name": "DMG vs Rogues",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 515,
+   "enum": "ATTR_SPECIAL_JOB_SNIPER_RESTRAIN",
+   "kind": "other",
+   "display": "DMG vs Hunters",
+   "attrInfo": {
+    "name": "DMG vs Hunters",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 516,
+   "enum": "ATTR_SPECIAL_JOB_MINSTREL_GYPSY_RESTRAIN",
+   "kind": "other",
+   "display": "DMG vs Bards / Dancers",
+   "attrInfo": {
+    "name": "DMG vs Bards / Dancers",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 517,
+   "enum": "ATTR_SPECIAL_JOB_MASTERSMITH_RESTRAIN",
+   "kind": "other",
+   "display": "DMG vs Blacksmiths",
+   "attrInfo": {
+    "name": "DMG vs Blacksmiths",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 518,
+   "enum": "ATTR_SPECIAL_JOB_BIOCHEMIST_RESTRAIN",
+   "kind": "other",
+   "display": "DMG vs Alchemists",
+   "attrInfo": {
+    "name": "DMG vs Alchemists",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 519,
+   "enum": "ATTR_SPECIAL_DAMAGE_RESIST",
+   "kind": "other",
+   "display": "PvP Bulwark",
+   "attrInfo": {
+    "name": "PvP Bulwark",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 520,
+   "enum": "ATTR_SPECIAL_DAMAGE_RESTRAIN",
+   "kind": "other",
+   "display": "PvP Fatality",
+   "attrInfo": {
+    "name": "PvP Fatality",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 521,
+   "enum": "ATTR_SPECIAL_ELEMENT_RATIO",
+   "kind": "other"
+  },
+  {
+   "id": 522,
+   "enum": "ATTR_SKILL_COMBO_STATE",
+   "kind": "other"
+  },
+  {
+   "id": 523,
+   "enum": "ATTR_SPECIAL_ROTATE_ONLY",
+   "kind": "other"
+  },
+  {
+   "id": 524,
+   "enum": "ATTR_SPECIAL_RESTRAIN_DAMUP",
+   "kind": "other"
+  },
+  {
+   "id": 525,
+   "enum": "ATTR_SPECIAL_RESIST_DAMDOWN",
+   "kind": "other"
+  },
+  {
+   "id": 526,
+   "enum": "ATTR_POSTURE_CUR_VAL",
+   "kind": "other"
+  },
+  {
+   "id": 527,
+   "enum": "ATTR_POSTURE_MAX_VAL",
+   "kind": "other"
+  },
+  {
+   "id": 528,
+   "enum": "ATTR_POSTURE_RATIO_VAL",
+   "kind": "other"
+  },
+  {
+   "id": 529,
+   "enum": "ATTR_POSTURE_LOCK_VAL",
+   "kind": "other"
+  },
+  {
+   "id": 530,
+   "enum": "ATTR_SPECIAL_POSSESSION",
+   "kind": "other"
+  },
+  {
+   "id": 531,
+   "enum": "ATTR_SPECIAL_JOB_WIZARD_RESTRAIN",
+   "kind": "other",
+   "display": "DMG vs Apprentice",
+   "attrInfo": {
+    "name": "DMG vs Apprentice",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 532,
+   "enum": "ATTR_SPECIAL_JOB_WIZARD_RESIST",
+   "kind": "other",
+   "display": "DMG Reduction vs Apprentice",
+   "attrInfo": {
+    "name": "DMG Reduction vs Apprentice",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 533,
+   "enum": "ATTR_TALLEST_NO_SKILL",
+   "kind": "other"
+  },
+  {
+   "id": 534,
+   "enum": "ATTR_SPECIAL_CLIENT_FORCE_DISPLAY",
+   "kind": "other"
+  },
+  {
+   "id": 535,
+   "enum": "ATTR_SOUL_FORCE_DAMUP",
+   "kind": "other",
+   "display": "Soul Force Mastery",
+   "attrInfo": {
+    "name": "Soul Force Mastery",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 0,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 536,
+   "enum": "ATTR_SOUL_FORCE_DAMDOWN",
+   "kind": "other",
+   "display": "Soul Force Resistance",
+   "attrInfo": {
+    "name": "Soul Force Resistance",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 0,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 537,
+   "enum": "ATTR_SOUL_FORCE_SKILL_ENERGY",
+   "kind": "other"
+  },
+  {
+   "id": 538,
+   "enum": "ATTR_SOUL_FORCE_SKILL_ENERGY_MAX",
+   "kind": "other"
+  },
+  {
+   "id": 539,
+   "enum": "ATTR_COLLECT_SPEED_UP",
+   "kind": "other"
+  },
+  {
+   "id": 540,
+   "enum": "ATTR_PET_ZHUANWU_HP",
+   "kind": "other"
+  },
+  {
+   "id": 541,
+   "enum": "ATTR_PET_ZHUANWU_ATK",
+   "kind": "other"
+  },
+  {
+   "id": 542,
+   "enum": "ATTR_PET_ZHUANWU_MATK",
+   "kind": "other"
+  },
+  {
+   "id": 543,
+   "enum": "ATTR_PET_ZHUANWU_DEF",
+   "kind": "other"
+  },
+  {
+   "id": 544,
+   "enum": "ATTR_PET_ZHUANWU_MDEF",
+   "kind": "other"
+  },
+  {
+   "id": 545,
+   "enum": "ATTR_PET_FINAL_RES",
+   "kind": "other"
+  },
+  {
+   "id": 546,
+   "enum": "ATTR_PET_ZHUANWU_IGNORE_PVPRES",
+   "kind": "other"
+  },
+  {
+   "id": 547,
+   "enum": "ATTR_PET_ZHUANWU_IGNORE_PVPDAM",
+   "kind": "other"
+  },
+  {
+   "id": 548,
+   "enum": "ATTR_PET_ZHUANWU_IMMUNETIME",
+   "kind": "other"
+  },
+  {
+   "id": 549,
+   "enum": "ATTR_PET_ZHUANWU_PERCENT_IMMUNETIME",
+   "kind": "other"
+  },
+  {
+   "id": 550,
+   "enum": "ATTR_SPECIAL_INDESTRUCT_ORNAMENT",
+   "kind": "other"
+  },
+  {
+   "id": 551,
+   "enum": "ATTR_SPECIAL_INDESTRUCT_FASHION",
+   "kind": "other"
+  },
+  {
+   "id": 552,
+   "enum": "ATTR_SPECIAL_INDESTRUCT_FACE_GEAR",
+   "kind": "other"
+  },
+  {
+   "id": 553,
+   "enum": "ATTR_SPECIAL_INDESTRUCT_MOUTH_GEAR",
+   "kind": "other"
+  },
+  {
+   "id": 554,
+   "enum": "ATTR_SPECIAL_INDESTRUCT_BACK_GEAR",
+   "kind": "other"
+  },
+  {
+   "id": 555,
+   "enum": "ATTR_SIN_VALUE",
+   "kind": "other"
+  },
+  {
+   "id": 556,
+   "enum": "ATTR_MAX_SIN_VALUE",
+   "kind": "other"
+  },
+  {
+   "id": 557,
+   "enum": "ATTR_SIN_FLAG",
+   "kind": "other"
+  },
+  {
+   "id": 558,
+   "enum": "ATTR_SPECIAL_JOB_NIGHTGUARD_RESTRAIN",
+   "kind": "other",
+   "display": "DMG vs Gunslinger",
+   "attrInfo": {
+    "name": "DMG vs Gunslinger",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 559,
+   "enum": "ATTR_SPECIAL_JOB_NIGHTGUARD_RESIST",
+   "kind": "other",
+   "display": "DMG Reduction vs Gunslinger",
+   "attrInfo": {
+    "name": "DMG Reduction vs Gunslinger",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 560,
+   "enum": "ATTR_SPECIAL_INDESTRUCT_GEAR",
+   "kind": "other"
+  },
+  {
+   "id": 561,
+   "enum": "ATTR_EMBLEM_DAMAGE",
+   "kind": "other",
+   "display": "Rune Coin DMG",
+   "attrInfo": {
+    "name": "Rune Coin DMG",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 562,
+   "enum": "ATTR_EMBLEM_RESIST",
+   "kind": "other",
+   "display": "Rune Coin Resistance",
+   "attrInfo": {
+    "name": "Rune Coin Resistance",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 563,
+   "enum": "ATTR_OUTFIT_DAMAGE",
+   "kind": "other",
+   "display": "Final DMG Bonus",
+   "attrInfo": {
+    "name": "Final DMG Bonus",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 564,
+   "enum": "ATTR_OUTFIT_RESIST",
+   "kind": "other",
+   "display": "Final DMG Reduction",
+   "attrInfo": {
+    "name": "Final DMG Reduction",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 565,
+   "enum": "ATTR_FIGHT_POINT",
+   "kind": "other"
+  },
+  {
+   "id": 566,
+   "enum": "ATTR_MOVE_LIMIT_MAX",
+   "kind": "other",
+   "playerCalc": "in"
+  },
+  {
+   "id": 567,
+   "enum": "ATTR_MOVE_LIMIT_MIN",
+   "kind": "other",
+   "playerCalc": "in"
+  },
+  {
+   "id": 568,
+   "enum": "ATTR_SPECIAL_JOB_SUPERNOVICE_RESTRAIN",
+   "kind": "other",
+   "display": "DMG vs Novices",
+   "attrInfo": {
+    "name": "DMG vs Novices",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 569,
+   "enum": "ATTR_SPECIAL_JOB_SUPERNOVICE_RESIST",
+   "kind": "other",
+   "display": "DMG Reduction vs Novices",
+   "attrInfo": {
+    "name": "DMG Reduction vs Novices",
+    "type": 2,
+    "typeId": 4,
+    "equipId": -1,
+    "floorNum": 1,
+    "showDetail": 0
+   }
+  },
+  {
+   "id": 570,
+   "enum": "ATTR_SPECIAL_INDESTRUCT_WHEEL_ONE",
+   "kind": "other"
+  },
+  {
+   "id": 571,
+   "enum": "ATTR_SPECIAL_INDESTRUCT_WHEEL_TWO",
+   "kind": "other"
+  },
+  {
+   "id": 572,
+   "enum": "ATTR_SPECIAL_INDESTRUCT_WHEEL_THREE",
+   "kind": "other"
+  },
+  {
+   "id": 573,
+   "enum": "ATTR_DEF_REDUC_LIMI",
+   "kind": "other"
+  },
+  {
+   "id": 574,
+   "enum": "ATTR_MDEF_REDUC_LIMIT",
+   "kind": "other"
+  },
+  {
+   "id": 575,
+   "enum": "ATTR_GUNNER_WEAPONS_TYPE",
+   "kind": "other"
+  },
+  {
+   "id": 576,
+   "enum": "ATTR_OCCUPY_14",
+   "kind": "other"
+  },
+  {
+   "id": 577,
+   "enum": "ATTR_OCCUPY_15",
+   "kind": "other"
+  },
+  {
+   "id": 578,
+   "enum": "ATTR_OCCUPY_16",
+   "kind": "other"
+  },
+  {
+   "id": 579,
+   "enum": "ATTR_OCCUPY_17",
+   "kind": "other"
+  },
+  {
+   "id": 580,
+   "enum": "ATTR_OCCUPY_18",
+   "kind": "other"
+  },
+  {
+   "id": 581,
+   "enum": "ATTR_OCCUPY_19",
+   "kind": "other"
+  },
+  {
+   "id": 582,
+   "enum": "ATTR_OCCUPY_20",
+   "kind": "other"
+  },
+  {
+   "id": 583,
+   "enum": "ATTR_OCCUPY_21",
+   "kind": "other"
+  },
+  {
+   "id": 584,
+   "enum": "ATTR_OCCUPY_22",
+   "kind": "other"
+  },
+  {
+   "id": 585,
+   "enum": "ATTR_OCCUPY_23",
+   "kind": "other"
+  },
+  {
+   "id": 586,
+   "enum": "ATTR_OCCUPY_24",
+   "kind": "other"
+  },
+  {
+   "id": 587,
+   "enum": "ATTR_OCCUPY_25",
+   "kind": "other"
+  },
+  {
+   "id": 588,
+   "enum": "ATTR_OCCUPY_26",
+   "kind": "other"
+  },
+  {
+   "id": 589,
+   "enum": "ATTR_OCCUPY_27",
+   "kind": "other"
+  },
+  {
+   "id": 590,
+   "enum": "ATTR_OCCUPY_28",
+   "kind": "other"
+  },
+  {
+   "id": 591,
+   "enum": "ATTR_MAX_COUNT",
+   "kind": "other"
+  }
+ ],
+ "attrInfoIdsNotInEnum": []
+}

@@ -1,0 +1,100 @@
+# GitHub Pages, one deploy per release: merging a branch named rc-<major>.<minor>.<patch> (semver, e.g. rc-1.4.0)
+# into main tests, builds and publishes that version at https://<user>.github.io/<repo>/, then tags it v1.4.0
+# and creates a GitHub release, then opens the next release branch rc-1.4.1. Other pushes to main run nothing.
+name: Deploy to GitHub Pages
+
+# push (not pull_request) so the deploy runs on main, which the github-pages environment allows
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  version:
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.v.outputs.version }}
+    steps:
+      - id: v
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          branch=$(gh api "repos/${{ github.repository }}/commits/${{ github.sha }}/pulls" --jq '[.[] | select(.merged_at)][0].head.ref // ""')
+          echo "merged branch: ${branch:-none}"
+          if [[ ! $branch =~ ^rc-(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)$ ]]; then
+            [[ $branch == rc-* ]] && { echo "::error::$branch is not rc-<major>.<minor>.<patch>"; exit 1; }
+            echo "not a release merge, nothing to deploy"; exit 0
+          fi
+          version=${branch#rc-}
+          if gh api "repos/${{ github.repository }}/git/ref/tags/v$version" --silent 2>/dev/null; then
+            echo "::error::v$version is already released; use a new rc-x.y.z branch"; exit 1
+          fi
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+
+  build:
+    needs: version
+    if: needs.version.outputs.version
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # same Node version as the Dockerfile
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24.15.0
+          cache: npm
+      - run: npm ci
+      # the app reads its version from package.json; the bump stays in this build only
+      - run: npm version "${{ needs.version.outputs.version }}" --no-git-tag-version --allow-same-version
+      - run: npx ng test --watch=false
+      # relative base href: works under /<repo>/ (routes use #, data loads from relative data/ paths)
+      - run: npx ng build --base-href ./
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist/roc-calculator/browser
+
+  deploy:
+    needs: [version, build]
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
+
+  release:
+    needs: [version, deploy]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+      VERSION: ${{ needs.version.outputs.version }}
+    steps:
+      - run: >
+          gh release create "v$VERSION" --repo "${{ github.repository }}" --target "${{ github.sha }}"
+          --title "v$VERSION" --generate-notes
+      - uses: actions/checkout@v4
+      # next release branch: patch + 1 from this main commit, with package.json already on that version;
+      # the rc-* ruleset (.github/rulesets) protects it; it has no creation rule, so this push that creates it passes
+      - run: |
+          IFS=. read -r major minor patch <<< "$VERSION"
+          next="$major.$minor.$((patch + 1))"
+          if git ls-remote --exit-code --heads origin "rc-$next" >/dev/null; then
+            echo "rc-$next already exists"; exit 0
+          fi
+          git checkout -b "rc-$next"
+          npm version "$next" --no-git-tag-version
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -am "Start $next"
+          git push origin "rc-$next"
